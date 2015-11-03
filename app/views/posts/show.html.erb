@@ -1,0 +1,22 @@
+<div class="container col-md-8">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-info">
+      <p><strong><%= @post.title %></strong></p>
+      <%= @post.updated_at %>
+    </li>
+    <li class="list-group-item">
+      <%= @post.body %>
+    </li>
+  </ul>
+
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-info">
+      <p><strong>Comments</strong></p>
+    </li>
+    <li class="list-group-item">
+    </li>
+</div>
+
+<div class="container col-md-4">
+  <%= render "side_bar" %>
+</div>
