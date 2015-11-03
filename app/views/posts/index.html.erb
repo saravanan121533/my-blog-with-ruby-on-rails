@@ -2,41 +2,28 @@
   <% if @posts.empty? %>
     <ul class="list-group">
       <li class="list-group-item list-group-item-info">
+        <!-- if there are no blogs available at the DB, No items to display -->
         <p>No items to display</p>
       </li>
     </ul>
   <% else %>
+    <!-- loop through all the data retrieve and display -->
     <% @posts.each do |item| %>
       <ul class="list-group">
         <li class="list-group-item list-group-item-info">
-          <div class="container col-md-8">
             <%= link_to post_path(item) do %>
               <p><strong><%= item.title %></strong></p>
             <% end %>
-          </div>
-
-          <div class="container col-md-4" id="action-icons">
-            <!-- small icons that will handle actions: edit, delete -->
-            <%= link_to edit_post_path(item) do %>
-              <i class="glyphicon glyphicon-edit"
-                aria-hidden="true" style="color: blue"></i>
-            <% end %>
-            <%= link_to post_path(item), method: :delete, data: {confirm: "Are you sure?"} do %>
-              <i class="glyphicon glyphicon-trash"
-                aria-hidden="true"></i>
-            <% end %>
-          </div>
-
-          <div>
-            <!-- display entry updated date -->
+            <!-- date display entry updated date -->
             <p><%= item.updated_at %></p>
-          </div>
 
         </li>
 
         <li class="list-group-item">
-
-          <p><%= truncate(item.body, :ommision => "... Read More", :length => 150) %></p>
+          <!-- this will show only 200 character of the body to continue reading
+          use needs to click on blog to view full content and other functions -->
+          <p><%= truncate(item.body, :ommision => "... Read More",
+                                     :length => 200) %></p>
         </li>
       </ul>
     <% end %>
