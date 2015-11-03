@@ -1,0 +1,12 @@
+<div class="container">
+  <h3>New Blog Post</h3>
+</div>
+<!-- <div class="container">
+  <div class="alert alert-danger" role="alert">
+  </div>
+</div> -->
+
+    <%= @post.errors.full_messages.join(", ") %>
+<div class="container">
+  <%= render "blog_post_form" %>
+</div>

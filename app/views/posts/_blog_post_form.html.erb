@@ -1,0 +1,17 @@
+<%= form_for @post do |f| %>
+  <div class="container col-md-12">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </li>
+      <li class="list-group-item">
+        <%= f.label :body %>
+        <%= f.text_area :body, class: "form-control", size: "60x12" %>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <%= f.submit({class: "btn btn-primary"}) %>
+  </div>
+<% end %>

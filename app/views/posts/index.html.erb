@@ -1,0 +1,60 @@
+<div class="container col-md-8">
+  <% if @posts.empty? %>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info">
+        <p>No items to display</p>
+      </li>
+    </ul>
+  <% else %>
+    <% @posts.each do |item| %>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-info">
+          <div class="container col-md-8">
+            <p><strong><%= item.title %></strong></p>
+          </div>
+
+          <div class="container col-md-4" id="action-icons">
+            <!-- small icons that will handle actions: edit, delete -->
+            <%= link_to edit_post_path(item) do %>
+              <i class="glyphicon glyphicon-edit"
+                aria-hidden="true" style="color: blue"></i>
+            <% end %>
+            <%= link_to post_path(item), method: :delete, data: {confirm: "Are you sure?"} do %>
+              <i class="glyphicon glyphicon-trash"
+                aria-hidden="true"></i>
+            <% end %>
+          </div>
+
+          <div>
+            <!-- display entry updated date -->
+            <p><%= item.updated_at %></p>
+          </div>
+
+        </li>
+
+        <li class="list-group-item">
+          <p><%= item.body %></p>
+        </li>
+      </ul>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="container col-md-4">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-success">
+      <h4>Side Items here</h4>
+    </li>
+    <li class="list-group-item">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+      </p>
+    </li>
+  </ul>
+</div>
