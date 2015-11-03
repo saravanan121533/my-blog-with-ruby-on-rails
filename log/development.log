@@ -7316,3 +7316,867 @@ Processing by PostsController#show as HTML
   Rendered posts/_side_bar.html.erb (0.0ms)
   Rendered posts/show.html.erb within layouts/application (1.6ms)
 Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 19:47:07 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.3ms)
+  Rendered posts/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 4093ms (Views: 4079.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-02 19:47:12 -0800
+
+
+Started GET "/posts/new" for ::1 at 2015-11-02 19:47:24 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_blog_post_form.html.erb (25.6ms)
+  Rendered posts/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 113ms (Views: 111.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-02 19:47:56 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2HLxhjRBdHOAiwCNCwyj8H5ZYFIJaiGPhHJkLCAaC+h4/+EeU6mBrZjZrJBChNrLU/3kiEvWGL8Z/HJJJsewjA==", "post"=>{"title"=>"My third Blog Post", "body"=>"This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. "}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `params' for #<Class:0x007f9977183388>):
+  app/models/post.rb:7:in `post_params'
+  app/controllers/posts_controller.rb:11:in `create'
+
+
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.6ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.6ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.9ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-02 19:48:48 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2HLxhjRBdHOAiwCNCwyj8H5ZYFIJaiGPhHJkLCAaC+h4/+EeU6mBrZjZrJBChNrLU/3kiEvWGL8Z/HJJJsewjA==", "post"=>{"title"=>"My third Blog Post", "body"=>"This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. "}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `post_params' for #<Class:0x007f99799134c0>):
+  app/controllers/posts_controller.rb:11:in `create'
+
+
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.1ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.4ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-02 19:49:05 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2HLxhjRBdHOAiwCNCwyj8H5ZYFIJaiGPhHJkLCAaC+h4/+EeU6mBrZjZrJBChNrLU/3kiEvWGL8Z/HJJJsewjA==", "post"=>{"title"=>"My third Blog Post", "body"=>"This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. "}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE "posts"."title" = 'My third Blog Post' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "My third Blog Post"], ["body", "This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. "], ["created_at", "2015-11-03 03:49:05.497141"], ["updated_at", "2015-11-03 03:49:05.497141"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 28ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 19:49:05 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-02 19:49:05 -0800
+
+
+Started GET "/posts/5" for ::1 at 2015-11-02 19:49:44 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered posts/_side_bar.html.erb (0.2ms)
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 66ms (Views: 57.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-02 21:30:56 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 246ms (Views: 238.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-02 21:30:57 -0800
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:31:00 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.4ms)
+  Rendered posts/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 109ms (Views: 103.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/5" for ::1 at 2015-11-02 21:31:05 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 92ms (Views: 81.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:31:07 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/5" for ::1 at 2015-11-02 21:31:12 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:31:16 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/5" for ::1 at 2015-11-02 21:31:19 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:31:32 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/5/edit" for ::1 at 2015-11-02 21:31:37 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered posts/_blog_post_form.html.erb (11.6ms)
+  Rendered posts/edit.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/posts/5" for ::1 at 2015-11-02 21:31:45 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TZfsopke+utcz7MQQP2n1boMbdyuvm8UalnNMYrKuPPtGvw6/vYPNUSdHw0Jdd7ul6jpBuwCViT319tUjBcDlw==", "post"=>{"title"=>"", "body"=>"This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. "}, "commit"=>"Update Post", "id"=>"5"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.9ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."title" = '' AND "posts"."id" != 5) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered posts/_blog_post_form.html.erb (1.9ms)
+  Rendered posts/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 95ms (Views: 74.6ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/posts/5" for ::1 at 2015-11-02 21:31:57 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3I7VqcAcv4gI6EjUfH4bh6MyRGDXEjh3hP++PRqwebZ8A8Uxp/RKVhC65Mk19mK8jpbAupWuAUcZcahYHG3C0g==", "post"=>{"title"=>"My third Blog Post", "body"=>"This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. \r\nadsfasdfasdf"}, "commit"=>"Update Post", "id"=>"5"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.4ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'My third Blog Post' AND "posts"."id" != 5) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "posts" SET "body" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["body", "This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. This is a test, this is a test. \r\nadsfasdfasdf"], ["updated_at", "2015-11-03 05:31:57.751698"], ["id", 5]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 12ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:31:57 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.4ms)
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2015-11-02 21:32:15 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_blog_post_form.html.erb (1.6ms)
+  Rendered posts/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/posts/1" for ::1 at 2015-11-02 21:32:20 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"64b5fJcZHJu2ZOkI2YRFgpOmqF5nc6z2v2buHvIIPrRLC+nk8PHpRa42RRWQDDy5vgIshCXPlcYi6Ph79NWF0A==", "post"=>{"title"=>"Blog 1 Test", "body"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. fasfadsfasdf"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.5ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Blog 1 Test' AND "posts"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "body" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["body", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. fasfadsfasdf"], ["updated_at", "2015-11-03 05:32:21.009132"], ["id", 1]]
+  [1m[35m (4.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 14ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:32:21 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-11-02 21:32:50 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_blog_post_form.html.erb (2.4ms)
+  Rendered posts/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-02 21:33:10 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"psi9nIsnIPdVYVCU+sPlVNs/ZswX3/XYa5zLlnraEkIGRa0E7M/VKU0z/ImzS5xv9pviFlVjzOj2Et3zfAepJg==", "post"=>{"title"=>"Today's Blog", "body"=>"alkdsfjla;sdkfjalds a;lsdfkjdasl;kfjdsl;fja ;lakdfj;ladsfjad;lskjflkd;sjf"}, "commit"=>"Create Post"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.6ms)[0m  SELECT  1 AS one FROM "posts" WHERE "posts"."title" = 'Today''s Blog' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Today's Blog"], ["body", "alkdsfjla;sdkfjalds a;lsdfkjdasl;kfjdsl;fja ;lakdfj;ladsfjad;lskjflkd;sjf"], ["created_at", "2015-11-03 05:33:10.909805"], ["updated_at", "2015-11-03 05:33:10.909805"]]
+  [1m[35m (4.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 13ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:33:10 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.2ms)
+  Rendered posts/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-02 21:42:30 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 262ms (Views: 253.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-02 21:42:30 -0800
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:42:37 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.3ms)
+  Rendered posts/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 102ms (Views: 91.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:48:00 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.3ms)
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-02 21:48:00 -0800
+
+
+Started GET "/posts/6" for ::1 at 2015-11-02 21:48:07 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 49.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:48:11 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-11-02 21:48:12 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_side_bar.html.erb (0.1ms)
+  Rendered posts/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:48:30 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-02 21:48:31 -0800
+
+
+Started GET "/posts/1" for ::1 at 2015-11-02 21:49:05 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/posts/6" for ::1 at 2015-11-02 21:50:01 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DrN+nu75LN8KH7eA1zBVHUmbrLkgtVYdEsQ9KqqB0EmuPm4GiRHZARJNG52euCwmZD8oY2IJby2PSitPrFxrLQ==", "id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 6]]
+  [1m[35m (5.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 11ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:50:01 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/posts/1" for ::1 at 2015-11-02 21:50:03 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dy9jIV3sGHE5xZwqDhQCIIqMt6cpQl+vaaD5i8f8o6jXonO5OgTtryGXMDdHnHsbpygzfWv+Zp/0Lu/uwSEYzA==", "id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 7ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:50:03 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.2ms)
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/posts/5" for ::1 at 2015-11-02 21:50:05 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"szPK/9ttEMr2FKrsxDOYNhm5o5UeOOeozTQMoFUhk3kTvtpnvIXlFO5GBvGNu+ENNB0nT1yE3phQuhrFU/woHQ==", "id"=>"5"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:50:05 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/posts/4" for ::1 at 2015-11-02 21:50:08 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1C0fQs3sNQ5ZL72JuQsUljEcEWNXk4Z2lhPJChwED0J0oA/aqgTA0EF9EZTwg22tHLiVuRUvv0YLnd9vGtm0Jg==", "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 4]]
+  [1m[35m (1.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:50:08 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  Rendered posts/_side_bar.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-11-02 21:50:11 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_blog_post_form.html.erb (16.6ms)
+  Rendered posts/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-02 21:51:15 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vRrysRaPurXvXyLXeYQ8Dlbus1px1bPIRoLgPJSqohsdl+IpcWdPa/cNjsowDEU1e0o3gDNpivjbDPZZkncZfw==", "post"=>{"title"=>"Jumper by Third Eye Blind", "body"=>"I wish you would step back from that ledge, my friend\r\nYou could cut ties with all the lies, that you've been living in\r\nAnd if you do not want to see me again\r\nI would understand, I would understand\r\n\r\nThe angry boy, a bit too insane\r\nIcing over a secret pain\r\nYou know you don't belong\r\n\r\nYou're the first to fight\r\nYou're way too loud\r\nYou're the flash of light on a burial shroud\r\nI know something's wrong\r\n\r\nWell, everyone I know has got a reason\r\nTo say put the past away\r\n\r\nWish you would step back from that ledge, my friend\r\nYou could cut ties with all the lies that you've been living in\r\nAnd if you do not want to see me again\r\nI would understand, I would understand\r\n\r\nAnd well, he's on the table\r\nAnd he's gone to code\r\nAnd I do not think anyone knows\r\nWhat they are doing here\r\n\r\nAnd your friends have left you\r\nYou've been dismissed\r\nI never thought it would come to this\r\nimage: http://static.urx.io/units/web/urx-unit-loader.gif\r\n\r\n\r\nAnd I, I want you to know\r\n\r\nEveryone's got to face down the demons\r\nMaybe today we can put the past away\r\n\r\nI wish you would step back from that ledge my friend\r\nYou could cut ties with all the lies\r\nThat you've been living in and if you do not want to see me again\r\nI would understand, I would understand, I would understand\r\n\r\nI would understand\r\nI would understand\r\nUnderstand\r\n\r\nCan you put the past away?\r\nI wish you would step back from that ledge, my friend\r\nI would understand\r\n\r\nI wish you would step back from that ledge, my friend\r\nI would understand\r\nI wish you would step back from that ledge, my friend\r\nAnd I would understand\r\n\r\nI wish you would step back from that ledge, my friend\r\nI would understand\r\nI wish you would step back from that ledge, my friend\r\nAnd I would understand"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE "posts"."title" = 'Jumper by Third Eye Blind' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Jumper by Third Eye Blind"], ["body", "I wish you would step back from that ledge, my friend\r\nYou could cut ties with all the lies, that you've been living in\r\nAnd if you do not want to see me again\r\nI would understand, I would understand\r\n\r\nThe angry boy, a bit too insane\r\nIcing over a secret pain\r\nYou know you don't belong\r\n\r\nYou're the first to fight\r\nYou're way too loud\r\nYou're the flash of light on a burial shroud\r\nI know something's wrong\r\n\r\nWell, everyone I know has got a reason\r\nTo say put the past away\r\n\r\nWish you would step back from that ledge, my friend\r\nYou could cut ties with all the lies that you've been living in\r\nAnd if you do not want to see me again\r\nI would understand, I would understand\r\n\r\nAnd well, he's on the table\r\nAnd he's gone to code\r\nAnd I do not think anyone knows\r\nWhat they are doing here\r\n\r\nAnd your friends have left you\r\nYou've been dismissed\r\nI never thought it would come to this\r\nimage: http://static.urx.io/units/web/urx-unit-loader.gif\r\n\r\n\r\nAnd I, I want you to know\r\n\r\nEveryone's got to face down the demons\r\nMaybe today we can put the past away\r\n\r\nI wish you would step back from that ledge my friend\r\nYou could cut ties with all the lies\r\nThat you've been living in and if you do not want to see me again\r\nI would understand, I would understand, I would understand\r\n\r\nI would understand\r\nI would understand\r\nUnderstand\r\n\r\nCan you put the past away?\r\nI wish you would step back from that ledge, my friend\r\nI would understand\r\n\r\nI wish you would step back from that ledge, my friend\r\nI would understand\r\nI wish you would step back from that ledge, my friend\r\nAnd I would understand\r\n\r\nI wish you would step back from that ledge, my friend\r\nI would understand\r\nI wish you would step back from that ledge, my friend\r\nAnd I would understand"], ["created_at", "2015-11-03 05:51:15.264849"], ["updated_at", "2015-11-03 05:51:15.264849"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 24ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:51:15 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:51:38 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-02 21:51:38 -0800
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:51:59 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-02 21:51:59 -0800
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:52:09 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-02 21:52:09 -0800
+
+
+Started GET "/posts/new" for ::1 at 2015-11-02 21:53:33 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_blog_post_form.html.erb (1.6ms)
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-02 21:54:39 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wmlX3r1PmBrBoJpuuNc/VB5CMwFXdwxwjOjW85m5FmBi5EdG2qdtxNnyNnPxX0ZvM+a32xXLNUARZsCWn2StBA==", "post"=>{"title"=>"Zombie by Cranberries", "body"=>"Another head hangs lowly\r\nChild is slowly taken\r\nAnd the violence caused such silence\r\nWho are we mistaken\r\n\r\nBut you see it’s not me, \r\nit’s not my family\r\nIn your head, in your \r\nhead they are fighting\r\nWith their tanks and their bombs\r\nAnd their bombs and their guns\r\nIn your head,\r\nin your head they are cryin?\r\nIn your head\r\nZombie\r\nWhat’s in your head, in your head\r\nZombie\r\n\r\nAnother mother’s breakin?\r\nheart is taking over\r\nwhen the violence causes silence\r\nWe must be mistaken\r\n\r\nIt’s the same old theme since 1916\r\nIn your head, \r\nIn your head they’re still fighting\r\nWith their tanks \r\nIn your head they’re dying\r\n\r\nIn your head, in your head\r\nZombie\r\nWhat’s in your head, in your head\r\nZombie"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE "posts"."title" = 'Zombie by Cranberries' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Zombie by Cranberries"], ["body", "Another head hangs lowly\r\nChild is slowly taken\r\nAnd the violence caused such silence\r\nWho are we mistaken\r\n\r\nBut you see it’s not me, \r\nit’s not my family\r\nIn your head, in your \r\nhead they are fighting\r\nWith their tanks and their bombs\r\nAnd their bombs and their guns\r\nIn your head,\r\nin your head they are cryin?\r\nIn your head\r\nZombie\r\nWhat’s in your head, in your head\r\nZombie\r\n\r\nAnother mother’s breakin?\r\nheart is taking over\r\nwhen the violence causes silence\r\nWe must be mistaken\r\n\r\nIt’s the same old theme since 1916\r\nIn your head, \r\nIn your head they’re still fighting\r\nWith their tanks \r\nIn your head they’re dying\r\n\r\nIn your head, in your head\r\nZombie\r\nWhat’s in your head, in your head\r\nZombie"], ["created_at", "2015-11-03 05:54:39.248086"], ["updated_at", "2015-11-03 05:54:39.248086"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:54:39 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 74ms (Views: 72.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/8" for ::1 at 2015-11-02 21:54:45 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-11-02 21:56:26 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_blog_post_form.html.erb (1.5ms)
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-02 21:56:44 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p8Z5Wt/M1Lj9A/FZwWhfyD/lVKKdBwJ0uuvIujUPpCAHS2nCuCQhZuVRXUSI4CbzEkHQeN+7O0QnZd7fM9IfRA==", "post"=>{"title"=>"Road Tripin' by Red Hot Chilli Peppers", "body"=>"Road trippin' with my two favorite allies\r\nFully loaded, we got snacks and supplies\r\nIt's time to leave this town, it's time to steal away\r\nLet's go get lost anywhere in the U.S.A.\r\n\r\nLet's go get lost\r\nLet's go get lost\r\n\r\nBlue, you sit so pretty west of the one\r\nSparkles light with yellow icing\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\n\r\nSo much has come before those battles lost and won\r\nThis life is shining more forever in the sun\r\nNow let us check our heads and let us check the surf\r\nStaying high and dry is more trouble than it's worth in the sun\r\n\r\nJust a mirror for the sun\r\nimage: http://static.urx.io/units/web/urx-unit-loader.gif\r\n\r\n\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\n\r\nIn Big Sur we take some time to linger on\r\nWe three hunky dory's got our snake finger on\r\nNow let us drink the stars it's time to steal away\r\nLet's go get lost right here in the U.S.A\r\n\r\nBlue, you sit so pretty west of the one\r\nSparkles light with yellow icing\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\nThese smiling eyes are just a mirror for\r\nYour smiling eyes are just a mirror for"}, "commit"=>"Create Post"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.7ms)[0m  SELECT  1 AS one FROM "posts" WHERE "posts"."title" = 'Road Tripin'' by Red Hot Chilli Peppers' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Road Tripin' by Red Hot Chilli Peppers"], ["body", "Road trippin' with my two favorite allies\r\nFully loaded, we got snacks and supplies\r\nIt's time to leave this town, it's time to steal away\r\nLet's go get lost anywhere in the U.S.A.\r\n\r\nLet's go get lost\r\nLet's go get lost\r\n\r\nBlue, you sit so pretty west of the one\r\nSparkles light with yellow icing\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\n\r\nSo much has come before those battles lost and won\r\nThis life is shining more forever in the sun\r\nNow let us check our heads and let us check the surf\r\nStaying high and dry is more trouble than it's worth in the sun\r\n\r\nJust a mirror for the sun\r\nimage: http://static.urx.io/units/web/urx-unit-loader.gif\r\n\r\n\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\n\r\nIn Big Sur we take some time to linger on\r\nWe three hunky dory's got our snake finger on\r\nNow let us drink the stars it's time to steal away\r\nLet's go get lost right here in the U.S.A\r\n\r\nBlue, you sit so pretty west of the one\r\nSparkles light with yellow icing\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\nThese smiling eyes are just a mirror for\r\nYour smiling eyes are just a mirror for"], ["created_at", "2015-11-03 05:56:44.415883"], ["updated_at", "2015-11-03 05:56:44.415883"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 10ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:56:44 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  Rendered posts/_side_bar.html.erb (0.3ms)
+  Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/9" for ::1 at 2015-11-02 21:56:46 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  Rendered posts/_side_bar.html.erb (0.0ms)
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/9/edit" for ::1 at 2015-11-02 21:56:57 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 9]]
+  Rendered posts/_blog_post_form.html.erb (1.5ms)
+  Rendered posts/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/posts/9" for ::1 at 2015-11-02 21:57:08 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BB+gKw0FgwZkmaFlEnLY+lbjsdlbJTxbfK2NTW52JJSkkrCzau122HzLDXhb+qHBe0c1AxmZBWvhI5soaKuf8A==", "post"=>{"title"=>"Road Tripin' by Red Hot Chilli Peppers", "body"=>"Road trippin' with my two favorite allies\r\nFully loaded, we got snacks and supplies\r\nIt's time to leave this town, it's time to steal away\r\nLet's go get lost anywhere in the U.S.A.\r\n\r\nLet's go get lost\r\nLet's go get lost\r\n\r\nBlue, you sit so pretty west of the one\r\nSparkles light with yellow icing\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\n\r\nSo much has come before those battles lost and won\r\nThis life is shining more forever in the sun\r\nNow let us check our heads and let us check the surf\r\nStaying high and dry is more trouble than it's worth in the sun\r\n\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\n\r\nIn Big Sur we take some time to linger on\r\nWe three hunky dory's got our snake finger on\r\nNow let us drink the stars it's time to steal away\r\nLet's go get lost right here in the U.S.A\r\n\r\nBlue, you sit so pretty west of the one\r\nSparkles light with yellow icing\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\nThese smiling eyes are just a mirror for\r\nYour smiling eyes are just a mirror for"}, "commit"=>"Update Post", "id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Road Tripin'' by Red Hot Chilli Peppers' AND "posts"."id" != 9) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "posts" SET "body" = $1, "updated_at" = $2 WHERE "posts"."id" = $3  [["body", "Road trippin' with my two favorite allies\r\nFully loaded, we got snacks and supplies\r\nIt's time to leave this town, it's time to steal away\r\nLet's go get lost anywhere in the U.S.A.\r\n\r\nLet's go get lost\r\nLet's go get lost\r\n\r\nBlue, you sit so pretty west of the one\r\nSparkles light with yellow icing\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\n\r\nSo much has come before those battles lost and won\r\nThis life is shining more forever in the sun\r\nNow let us check our heads and let us check the surf\r\nStaying high and dry is more trouble than it's worth in the sun\r\n\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\n\r\nIn Big Sur we take some time to linger on\r\nWe three hunky dory's got our snake finger on\r\nNow let us drink the stars it's time to steal away\r\nLet's go get lost right here in the U.S.A\r\n\r\nBlue, you sit so pretty west of the one\r\nSparkles light with yellow icing\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\nJust a mirror for the sun\r\n\r\nThese smiling eyes are just a mirror for\r\nThese smiling eyes are just a mirror for\r\nYour smiling eyes are just a mirror for"], ["updated_at", "2015-11-03 05:57:08.489368"], ["id", 9]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 12ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-02 21:57:08 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  Rendered posts/_side_bar.html.erb (0.2ms)
+  Rendered posts/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 1.2ms)

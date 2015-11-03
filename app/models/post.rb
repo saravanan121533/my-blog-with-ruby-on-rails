@@ -1,4 +1,11 @@
 class Post < ActiveRecord::Base
   # validation for post model
   validates :title, presence: true, uniqueness: true
+
+  # scope :post_params, -> {params.require(:post).permit([:title, :body])}
+
+  def ten_items
+    oder("created_at DESC").limit(10)
+  end
+
 end

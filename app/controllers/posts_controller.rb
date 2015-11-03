@@ -39,12 +39,11 @@ class PostsController < ApplicationController
     @post = Post.find params[:id]
   end
 
-
-
   private
 
-  # this will "sanitize" the user input that will be permitted to the DB
   def post_params
+    # this will "sanitize" the user input that will be permitted to the DB
     params.require(:post).permit([:title, :body])
- end
+  end
+
 end # end of class PostsController
