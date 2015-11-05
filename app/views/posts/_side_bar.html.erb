@@ -1,16 +1,28 @@
-<ul class="list-group">
-  <li class="list-group-item list-group-item-success">
-    <h4>Side Items here</h4>
-  </li>
-  <li class="list-group-item">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-      sint occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.
-    </p>
-  </li>
-</ul>
+<!-- All previous comments will be posted in the right side bar -->
+<div class="panel panel-primary">
+  <!-- This is the heading of the right side bar -->
+  <div class="panel-heading">
+    Comments
+    <% if @post.comments.count != 0 %>
+      <!-- This will display a badge on how many comments are posted -->
+      <span class="badge pull-right"><%= @post.comments.count %></span>
+    <% end %>
+  </div>
+
+  <!-- This will iterate all the comments for this specific post and display it -->
+  <ul class="list-group">
+    <!-- Check if there are comment data to display -->
+    <% if @post.comments.present? %>
+      <% @post.comments.each do |comment| %>
+        <li class="list-group-item">
+            <%= comment.body %>
+        </li>
+      <% end %>
+    <% else %>
+      <!-- There are no existing comments to display for this post -->
+      <li class="list-group-item">
+          No comment to display.
+      </li>
+    <% end %>
+  </ul>
+</div>

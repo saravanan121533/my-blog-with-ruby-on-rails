@@ -1,43 +1,54 @@
+<!-- The page display is divided into two where left container display all the
+blog post and the right container will display all the previous comments posted -->
 <div class="container col-md-8">
   <ul class="list-group">
+    <!-- Blog Post Header container -->
     <li class="list-group-item list-group-item-info">
+      <!-- This will display the blog post title  at container header -->
       <div>
-        <div class="container col-md-10">
-          <p><strong><%= @post.title %></strong></p>
-        </div>
-
-        <div class="container col-md-2" id="action-icons">
-          <!-- small icons that will handle actions: edit, delete -->
-          <%= link_to edit_post_path do %>
-            <i class="glyphicon glyphicon-edit"
-              aria-hidden="true" style="color: blue"></i>
-          <% end %>
-          <%= link_to post_path, method: :delete, data: {confirm: "Are you sure?"} do %>
-            <i class="glyphicon glyphicon-trash"
-              aria-hidden="true"></i>
-          <% end %>
-        </div>
+        <h3><%= @post.title %></h3>
       </div>
+
+      <!-- This will display the blog post title  at container header -->
       <div>
-        <p>
-          <%= @post.updated_at %>          
-        </p>
+        <%= @post.updated_at %>
       </div>
-    </li>
 
+      <!-- This will display the action icons at container header -->
+      <div id="action-icons">
+        <%= link_to edit_post_path do %>
+          <i class="glyphicon glyphicon-edit"
+            aria-hidden="true" style="color: blue"></i>
+        <% end %>
+        <%= link_to post_path, method: :delete, data: {confirm: "Are you sure?"} do %>
+          <i class="glyphicon glyphicon-trash"
+            aria-hidden="true"></i>
+        <% end %>
+      </div> <!-- end of icons container -->
+    </li> <!-- end of header container -->
+
+    <!-- Blog post content container -->
     <li class="list-group-item">
       <%= @post.body %>
     </li>
   </ul>
 
+  <!-- This is a form that enables user to post a comment for this specific blog post -->
   <ul class="list-group">
     <li class="list-group-item list-group-item-info">
-      <p><strong>Comments</strong></p>
+      <h4>Post a Comment</h4>
     </li>
-    <li class="list-group-item">
-    </li>
-</div>
 
+    <%= form_for [@post, @comment] do |f| %>
+      <li class="list-group-item">
+        <% f.label :body %>
+        <%= f.text_area :body, class: "form-control"%>
+      </li>
+      <%= f.submit class: "btn btn-primary" %>
+    <% end %>
+</div>  <!-- end of left container -->
+
+<!-- right container: This will display all the previous comments posted -->
 <div class="container col-md-4">
   <%= render "side_bar" %>
 </div>

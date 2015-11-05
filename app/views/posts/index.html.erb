@@ -1,4 +1,6 @@
-<div class="container col-md-8">
+<!-- This page will display all blog post -->
+<div class="container col-md-11">
+
   <% if @posts.empty? %>
     <ul class="list-group">
       <li class="list-group-item list-group-item-info">
@@ -14,22 +16,18 @@
             <%= link_to post_path(item) do %>
               <p><strong><%= item.title %></strong></p>
             <% end %>
+
             <!-- date display entry updated date -->
             <p><%= item.updated_at %></p>
-
         </li>
 
         <li class="list-group-item">
           <!-- this will show only 200 character of the body to continue reading
           use needs to click on blog to view full content and other functions -->
           <p><%= truncate(item.body, :ommision => "... Read More",
-                                     :length => 200) %></p>
+                                     :length => 300) %></p>
         </li>
       </ul>
-    <% end %>
-  <% end %>
-</div>
-
-<div class="container col-md-4">
-  <%= render "side_bar" %>
+    <% end %> <!-- and of loop -->
+  <% end %> <!-- end of if-else statement -->
 </div>

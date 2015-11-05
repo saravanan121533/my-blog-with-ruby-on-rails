@@ -8,4 +8,6 @@ class Post < ActiveRecord::Base
     oder("created_at DESC").limit(10)
   end
 
+  has_many :comments, dependent: :destroy
+
 end
