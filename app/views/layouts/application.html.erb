@@ -20,10 +20,10 @@
           <li>
             <%= link_to "Home", root_path %>
           </li>
-          <!-- comment out this link since root_path is now posts_path -->
-          <!-- <li>
-            <%#= link_to "Blog", posts_path %>
-          </li> -->
+          <!-- need to fix this route that post#index will be called from home -->
+          <li>
+            <%= link_to "Blog", posts_path %>
+          </li>
           <li>
             <%= link_to "New Blog", new_post_path %>
           </li>
