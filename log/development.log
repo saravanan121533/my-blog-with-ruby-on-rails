@@ -29119,3 +29119,2948 @@ Processing by PostsController#index as HTML
   Rendered posts/index.html.erb within layouts/application (7.1ms)
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 21:50:13 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (1.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (39.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2450ms (Views: 2427.7ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 21:50:16 -0800
+
+
+Started GET "/posts/new" for ::1 at 2015-11-11 21:50:18 -0800
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered posts/_blog_post_form.html.erb (20.3ms)
+  Rendered posts/new.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 145ms (Views: 137.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 21:50:18 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 21:50:18 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 21:50:18 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 21:50:18 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 21:50:18 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 21:50:18 -0800
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+
+
+Started GET "/" for ::1 at 2015-11-11 21:52:36 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (22.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 153ms (Views: 145.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 21:52:37 -0800
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:52:40 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (14.9ms)
+  Rendered posts/show.html.erb within layouts/application (18.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 103ms (Views: 93.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/32/edit" for ::1 at 2015-11-11 21:53:08 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered posts/_blog_post_form.html.erb (2.4ms)
+  Rendered posts/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 84ms (Views: 76.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 21:53:09 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 21:53:09 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 21:53:09 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 21:53:09 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 21:53:09 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 21:53:09 -0800
+
+
+Started PATCH "/posts/32" for ::1 at 2015-11-11 21:53:46 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Do3+nWrugswpCYz5Ari9C+Gea9goxtEGOoO1//5UBdEtydiEkNP1Sj2ii6tgpvPAiL9dSIfInSFZBiy+STrcw==", "post"=>{"category_id"=>"1", "title"=>"Fly me to the moon", "body"=>"<p>Fly me to the moon<br />\r\nLet me play among the stars<br />\r\nLet me see what spring is like on<br />\r\nA-Jupiter and Mars<br />\r\nIn other words, hold my hand<br />\r\nIn other words, baby, kiss me</p>\r\n\r\n<p>Fill my heart with song and let me sing for ever more<br />\r\nYou are all I long for<br />\r\nAll I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, I love you</p>\r\n\r\n<p>Fill my heart with song<br />\r\nLet me sing for ever more<br />\r\nYou are all I long for, all I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, in other words<br />\r\nIn other words<br />\r\nI love you</p>\r\n\r\n<p><br />\r\nRead more:&nbsp;<a href=\"http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE\">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>\r\n"}, "commit"=>"Update Post", "id"=>"32"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Fly me to the moon' AND "posts"."id" != 32) LIMIT 1[0m
+  [1m[35mPost Exists (0.3ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p>Fly me to the moon<br />
+Let me play among the stars<br />
+Let me see what spring is like on<br />
+A-Jupiter and Mars<br />
+In other words, hold my hand<br />
+In other words, baby, kiss me</p>
+
+<p>Fill my heart with song and let me sing for ever more<br />
+You are all I long for<br />
+All I worship and adore<br />
+In other words, please be true<br />
+In other words, I love you</p>
+
+<p>Fill my heart with song<br />
+Let me sing for ever more<br />
+You are all I long for, all I worship and adore<br />
+In other words, please be true<br />
+In other words, in other words<br />
+In other words<br />
+I love you</p>
+
+<p><br />
+Read more:&nbsp;<a href="http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>
+' AND "posts"."id" != 32) LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "posts" SET "body" = $1, "category_id" = $2, "updated_at" = $3 WHERE "posts"."id" = $4[0m  [["body", "<p>Fly me to the moon<br />\r\nLet me play among the stars<br />\r\nLet me see what spring is like on<br />\r\nA-Jupiter and Mars<br />\r\nIn other words, hold my hand<br />\r\nIn other words, baby, kiss me</p>\r\n\r\n<p>Fill my heart with song and let me sing for ever more<br />\r\nYou are all I long for<br />\r\nAll I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, I love you</p>\r\n\r\n<p>Fill my heart with song<br />\r\nLet me sing for ever more<br />\r\nYou are all I long for, all I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, in other words<br />\r\nIn other words<br />\r\nI love you</p>\r\n\r\n<p><br />\r\nRead more:&nbsp;<a href=\"http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE\">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>\r\n"], ["category_id", 1], ["updated_at", "2015-11-12 05:53:46.617559"], ["id", 32]]
+  [1m[35m (1.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/32
+Completed 302 Found in 18ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:53:46 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (3.6ms)
+  Rendered posts/show.html.erb within layouts/application (7.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 98ms (Views: 96.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/32/edit" for ::1 at 2015-11-11 21:53:53 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered posts/_blog_post_form.html.erb (2.4ms)
+  Rendered posts/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 99ms (Views: 96.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 21:53:53 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 21:53:53 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 21:53:53 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 21:53:53 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 21:53:53 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 21:53:53 -0800
+
+
+Started PATCH "/posts/32" for ::1 at 2015-11-11 21:53:59 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uxp8HKwSq49XFTsgbYlposcbeo0EtcfciMge2Mfk7VDzl2yEy/peUU9Hlz0kARCZ6r/+V0YJ/uwVRgi9wTlWNA==", "post"=>{"category_id"=>"5", "title"=>"Fly me to the moon", "body"=>"<p>Fly me to the moon<br />\r\nLet me play among the stars<br />\r\nLet me see what spring is like on<br />\r\nA-Jupiter and Mars<br />\r\nIn other words, hold my hand<br />\r\nIn other words, baby, kiss me</p>\r\n\r\n<p>Fill my heart with song and let me sing for ever more<br />\r\nYou are all I long for<br />\r\nAll I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, I love you</p>\r\n\r\n<p>Fill my heart with song<br />\r\nLet me sing for ever more<br />\r\nYou are all I long for, all I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, in other words<br />\r\nIn other words<br />\r\nI love you</p>\r\n\r\n<p><br />\r\nRead more:&nbsp;<a href=\"http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE\">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>\r\n"}, "commit"=>"Update Post", "id"=>"32"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.3ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Fly me to the moon' AND "posts"."id" != 32) LIMIT 1
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p>Fly me to the moon<br />
+Let me play among the stars<br />
+Let me see what spring is like on<br />
+A-Jupiter and Mars<br />
+In other words, hold my hand<br />
+In other words, baby, kiss me</p>
+
+<p>Fill my heart with song and let me sing for ever more<br />
+You are all I long for<br />
+All I worship and adore<br />
+In other words, please be true<br />
+In other words, I love you</p>
+
+<p>Fill my heart with song<br />
+Let me sing for ever more<br />
+You are all I long for, all I worship and adore<br />
+In other words, please be true<br />
+In other words, in other words<br />
+In other words<br />
+I love you</p>
+
+<p><br />
+Read more:&nbsp;<a href="http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>
+' AND "posts"."id" != 32) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "category_id" = $1, "updated_at" = $2 WHERE "posts"."id" = $3  [["category_id", 5], ["updated_at", "2015-11-12 05:53:59.105042"], ["id", 32]]
+  [1m[36m (4.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/32
+Completed 302 Found in 15ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:53:59 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (3.1ms)
+  Rendered posts/show.html.erb within layouts/application (6.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 107ms (Views: 104.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 21:54:10 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 21:54:56 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 96ms (Views: 94.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:54:56 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 21:54:57 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 21:54:57 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 21:56:50 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 88ms (Views: 85.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:56:50 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 21:56:50 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:56:50 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 21:56:50 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 21:56:51 -0800
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:56:56 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (3.4ms)
+  Rendered posts/show.html.erb within layouts/application (8.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 114ms (Views: 111.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/32/edit" for ::1 at 2015-11-11 21:57:01 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered posts/_blog_post_form.html.erb (2.1ms)
+  Rendered posts/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 95ms (Views: 91.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 21:57:02 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 21:57:02 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 21:57:02 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 21:57:02 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 21:57:02 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 21:57:02 -0800
+
+
+Started PATCH "/posts/32" for ::1 at 2015-11-11 21:57:06 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+xRP65Bh2WvN2rnsHv2H5DSJQhWQxEgiFL9AwwVCoz1bmV9z94kstdWIFfFXdf7fGS3Gz9J4cRKJMVamA58YWQ==", "post"=>{"category_id"=>"1", "title"=>"Fly me to the moon", "body"=>"<p>Fly me to the moon<br />\r\nLet me play among the stars<br />\r\nLet me see what spring is like on<br />\r\nA-Jupiter and Mars<br />\r\nIn other words, hold my hand<br />\r\nIn other words, baby, kiss me</p>\r\n\r\n<p>Fill my heart with song and let me sing for ever more<br />\r\nYou are all I long for<br />\r\nAll I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, I love you</p>\r\n\r\n<p>Fill my heart with song<br />\r\nLet me sing for ever more<br />\r\nYou are all I long for, all I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, in other words<br />\r\nIn other words<br />\r\nI love you</p>\r\n\r\n<p><br />\r\nRead more:&nbsp;<a href=\"http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE\">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>\r\n"}, "commit"=>"Update Post", "id"=>"32"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Fly me to the moon' AND "posts"."id" != 32) LIMIT 1
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p>Fly me to the moon<br />
+Let me play among the stars<br />
+Let me see what spring is like on<br />
+A-Jupiter and Mars<br />
+In other words, hold my hand<br />
+In other words, baby, kiss me</p>
+
+<p>Fill my heart with song and let me sing for ever more<br />
+You are all I long for<br />
+All I worship and adore<br />
+In other words, please be true<br />
+In other words, I love you</p>
+
+<p>Fill my heart with song<br />
+Let me sing for ever more<br />
+You are all I long for, all I worship and adore<br />
+In other words, please be true<br />
+In other words, in other words<br />
+In other words<br />
+I love you</p>
+
+<p><br />
+Read more:&nbsp;<a href="http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>
+' AND "posts"."id" != 32) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "category_id" = $1, "updated_at" = $2 WHERE "posts"."id" = $3  [["category_id", 1], ["updated_at", "2015-11-12 05:57:06.164004"], ["id", 32]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/32
+Completed 302 Found in 8ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:57:06 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (2.8ms)
+  Rendered posts/show.html.erb within layouts/application (7.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 105ms (Views: 102.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 21:57:13 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:57:17 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (2.5ms)
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:57:52 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (2.7ms)
+  Rendered posts/show.html.erb within layouts/application (5.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 21:57:52 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 21:57:53 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 105ms (Views: 102.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 21:57:54 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (12.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 104ms (Views: 100.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 21:57:54 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 21:58:29 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 21:58:29 -0800
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:58:33 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (2.6ms)
+  Rendered posts/show.html.erb within layouts/application (5.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 109ms (Views: 107.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/32/edit" for ::1 at 2015-11-11 21:58:35 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered posts/_blog_post_form.html.erb (2.0ms)
+  Rendered posts/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 101ms (Views: 97.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 21:58:35 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 21:58:35 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 21:58:35 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 21:58:35 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 21:58:35 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 21:58:36 -0800
+
+
+Started PATCH "/posts/32" for ::1 at 2015-11-11 21:58:40 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItP7HwKLjyo7grRnikEzSmSAFa8mzNJs/MrMksC1+ziCXuuHZWN69CPQGHrDyUpxSSSRdWRw61xhRNr3xmhAXA==", "post"=>{"category_id"=>"1", "title"=>"Fly me to the moon", "body"=>"<p>Fly me to the moon<br />\r\nLet me play among the stars<br />\r\nLet me see what spring is like on<br />\r\nA-Jupiter and Mars<br />\r\nIn other words, hold my hand<br />\r\nIn other words, baby, kiss me</p>\r\n\r\n<p>Fill my heart with song and let me sing for ever more<br />\r\nYou are all I long for<br />\r\nAll I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, I love you</p>\r\n\r\n<p>Fill my heart with song<br />\r\nLet me sing for ever more<br />\r\nYou are all I long for, all I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, in other words<br />\r\nIn other words<br />\r\nI love you</p>\r\n\r\n<p><br />\r\nRead more:&nbsp;<a href=\"http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE\">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>\r\n"}, "commit"=>"Update Post", "id"=>"32"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.3ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Fly me to the moon' AND "posts"."id" != 32) LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p>Fly me to the moon<br />
+Let me play among the stars<br />
+Let me see what spring is like on<br />
+A-Jupiter and Mars<br />
+In other words, hold my hand<br />
+In other words, baby, kiss me</p>
+
+<p>Fill my heart with song and let me sing for ever more<br />
+You are all I long for<br />
+All I worship and adore<br />
+In other words, please be true<br />
+In other words, I love you</p>
+
+<p>Fill my heart with song<br />
+Let me sing for ever more<br />
+You are all I long for, all I worship and adore<br />
+In other words, please be true<br />
+In other words, in other words<br />
+In other words<br />
+I love you</p>
+
+<p><br />
+Read more:&nbsp;<a href="http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>
+' AND "posts"."id" != 32) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/32
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:58:40 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (2.8ms)
+  Rendered posts/show.html.erb within layouts/application (5.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 21:58:46 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 103ms (Views: 101.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 21:59:27 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 91ms (Views: 89.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 21:59:28 -0800
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:59:29 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (3.1ms)
+  Rendered posts/show.html.erb within layouts/application (6.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 115ms (Views: 113.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/32/edit" for ::1 at 2015-11-11 21:59:37 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered posts/_blog_post_form.html.erb (2.6ms)
+  Rendered posts/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 105ms (Views: 101.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 21:59:37 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 21:59:37 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 21:59:37 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 21:59:37 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 21:59:37 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 21:59:37 -0800
+
+
+Started PATCH "/posts/32" for ::1 at 2015-11-11 21:59:43 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HALsng4pjIMtwBEpTLIzBkYrQnBXCCBT1xf3fwBdtjS8j/wGacF5XTWSvTQFOko9a4/GqhW0GWNKmeEaBoANUA==", "post"=>{"category_id"=>"1", "title"=>"Fly me to the moon", "body"=>"<p>Fly me to the moon<br />\r\nLet me play among the stars<br />\r\nLet me see what spring is like on<br />\r\nA-Jupiter and Mars<br />\r\nIn other words, hold my hand<br />\r\nIn other words, baby, kiss me</p>\r\n\r\n<p>Fill my heart with song and let me sing for ever more<br />\r\nYou are all I long for<br />\r\nAll I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, I love you</p>\r\n\r\n<p>Fill my heart with song<br />\r\nLet me sing for ever more<br />\r\nYou are all I long for, all I worship and adore<br />\r\nIn other words, please be true<br />\r\nIn other words, in other words<br />\r\nIn other words<br />\r\nI love you</p>\r\n\r\n<p><br />\r\nRead more:&nbsp;<a href=\"http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE\">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>\r\n"}, "commit"=>"Update Post", "id"=>"32"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Fly me to the moon' AND "posts"."id" != 32) LIMIT 1[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p>Fly me to the moon<br />
+Let me play among the stars<br />
+Let me see what spring is like on<br />
+A-Jupiter and Mars<br />
+In other words, hold my hand<br />
+In other words, baby, kiss me</p>
+
+<p>Fill my heart with song and let me sing for ever more<br />
+You are all I long for<br />
+All I worship and adore<br />
+In other words, please be true<br />
+In other words, I love you</p>
+
+<p>Fill my heart with song<br />
+Let me sing for ever more<br />
+You are all I long for, all I worship and adore<br />
+In other words, please be true<br />
+In other words, in other words<br />
+In other words<br />
+I love you</p>
+
+<p><br />
+Read more:&nbsp;<a href="http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html#ixzz3rFnaUwvE">Frank Sinatra - Fly Me To The Moon Lyrics | MetroLyrics</a>&nbsp;</p>
+' AND "posts"."id" != 32) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/32
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/32" for ::1 at 2015-11-11 21:59:43 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 32]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 32]]
+  Rendered posts/_side_bar.html.erb (2.8ms)
+  Rendered posts/show.html.erb within layouts/application (5.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 97ms (Views: 94.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 21:59:46 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 95ms (Views: 93.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:00:04 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:00:04 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:00:04 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:00:04 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:00:04 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:00:04 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:00:04 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:00:04 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:00:04 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:00:04 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:00:05 -0800
+
+
+Started GET "/posts/7" for ::1 at 2015-11-11 22:00:08 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  Rendered posts/_side_bar.html.erb (2.8ms)
+  Rendered posts/show.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/7/edit" for ::1 at 2015-11-11 22:00:38 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered posts/_blog_post_form.html.erb (2.5ms)
+  Rendered posts/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 22:00:38 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 22:00:38 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 22:00:38 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 22:00:38 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 22:00:38 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 22:00:38 -0800
+
+
+Started PATCH "/posts/7" for ::1 at 2015-11-11 22:00:50 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qbLM3tdN0QJm1GsvWSPP4ixLInTht1HWsBQmFOmWqyYJP9xGsKUk3H6GxzIQq7bZAe+mrqMLaOYtmjBx70sQQg==", "post"=>{"category_id"=>"1", "title"=>"Jumper by Third Eye Blind", "body"=>"<p>I wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nThe angry boy a bit too insane&nbsp;<br />\r\nIcing over a secret pain&nbsp;<br />\r\nYou know you don&#39;t belong&nbsp;<br />\r\nYou&#39;re the first to fight&nbsp;<br />\r\nYou&#39;re way too loud&nbsp;<br />\r\nYou&#39;re the flash of light on a burial shroud&nbsp;<br />\r\nI know something&#39;s wrong&nbsp;<br />\r\nWell everyone I know has got a reason&nbsp;<br />\r\nTo say put the past away&nbsp;<br />\r\nI wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nWell he&#39;s on the table and he&#39;s gone to code&nbsp;<br />\r\nAnd I do not think anyone knows&nbsp;<br />\r\nWhat they&#39;re doing here&nbsp;<br />\r\nAnd your friends have left you&nbsp;<br />\r\nYou&#39;ve been dismissed&nbsp;<br />\r\nI never thought it would come to this&nbsp;<br />\r\nAnd I, I want you to know&nbsp;<br />\r\nEveryone&#39;s got to face down the demons&nbsp;<br />\r\nMaybe today&nbsp;<br />\r\nYou could put the past away&nbsp;<br />\r\nI wish you would step back from&nbsp;<br />\r\nThat ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nCan you put the past away</p>\r\n"}, "commit"=>"Update Post", "id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Jumper by Third Eye Blind' AND "posts"."id" != 7) LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p>I wish you would step back&nbsp;<br />
+From that ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+The angry boy a bit too insane&nbsp;<br />
+Icing over a secret pain&nbsp;<br />
+You know you don&#39;t belong&nbsp;<br />
+You&#39;re the first to fight&nbsp;<br />
+You&#39;re way too loud&nbsp;<br />
+You&#39;re the flash of light on a burial shroud&nbsp;<br />
+I know something&#39;s wrong&nbsp;<br />
+Well everyone I know has got a reason&nbsp;<br />
+To say put the past away&nbsp;<br />
+I wish you would step back&nbsp;<br />
+From that ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+Well he&#39;s on the table and he&#39;s gone to code&nbsp;<br />
+And I do not think anyone knows&nbsp;<br />
+What they&#39;re doing here&nbsp;<br />
+And your friends have left you&nbsp;<br />
+You&#39;ve been dismissed&nbsp;<br />
+I never thought it would come to this&nbsp;<br />
+And I, I want you to know&nbsp;<br />
+Everyone&#39;s got to face down the demons&nbsp;<br />
+Maybe today&nbsp;<br />
+You could put the past away&nbsp;<br />
+I wish you would step back from&nbsp;<br />
+That ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+Can you put the past away</p>
+' AND "posts"."id" != 7) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "body" = $1, "category_id" = $2, "updated_at" = $3 WHERE "posts"."id" = $4  [["body", "<p>I wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nThe angry boy a bit too insane&nbsp;<br />\r\nIcing over a secret pain&nbsp;<br />\r\nYou know you don&#39;t belong&nbsp;<br />\r\nYou&#39;re the first to fight&nbsp;<br />\r\nYou&#39;re way too loud&nbsp;<br />\r\nYou&#39;re the flash of light on a burial shroud&nbsp;<br />\r\nI know something&#39;s wrong&nbsp;<br />\r\nWell everyone I know has got a reason&nbsp;<br />\r\nTo say put the past away&nbsp;<br />\r\nI wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nWell he&#39;s on the table and he&#39;s gone to code&nbsp;<br />\r\nAnd I do not think anyone knows&nbsp;<br />\r\nWhat they&#39;re doing here&nbsp;<br />\r\nAnd your friends have left you&nbsp;<br />\r\nYou&#39;ve been dismissed&nbsp;<br />\r\nI never thought it would come to this&nbsp;<br />\r\nAnd I, I want you to know&nbsp;<br />\r\nEveryone&#39;s got to face down the demons&nbsp;<br />\r\nMaybe today&nbsp;<br />\r\nYou could put the past away&nbsp;<br />\r\nI wish you would step back from&nbsp;<br />\r\nThat ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nCan you put the past away</p>\r\n"], ["category_id", 1], ["updated_at", "2015-11-12 06:00:50.279305"], ["id", 7]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/7" for ::1 at 2015-11-11 22:00:50 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  Rendered posts/_side_bar.html.erb (3.6ms)
+  Rendered posts/show.html.erb within layouts/application (6.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 106ms (Views: 104.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:00:56 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 99ms (Views: 96.7ms | ActiveRecord: 1.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCkeditorAssets (20151111220257)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (8.0ms)[0m  [1mCREATE TABLE "ckeditor_assets" ("id" serial primary key, "data_file_name" character varying NOT NULL, "data_content_type" character varying, "data_file_size" integer, "assetable_id" integer, "assetable_type" character varying(30), "type" character varying(30), "width" integer, "height" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE  INDEX  "idx_ckeditor_assetable_type" ON "ckeditor_assets"  ("assetable_type", "type", "assetable_id")
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX  "idx_ckeditor_assetable" ON "ckeditor_assets"  ("assetable_type", "assetable_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151111220257"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'ckeditor_assets'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'contacts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/posts/7" for ::1 at 2015-11-11 22:03:36 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  Rendered posts/_side_bar.html.erb (27.6ms)
+  Rendered posts/show.html.erb within layouts/application (51.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 400ms (Views: 363.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/posts/7/edit" for ::1 at 2015-11-11 22:03:39 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered posts/_blog_post_form.html.erb (17.6ms)
+  Rendered posts/edit.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 129ms (Views: 120.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 22:03:39 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 22:03:39 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 22:03:39 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 22:03:39 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 22:03:40 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 22:03:40 -0800
+
+
+Started PATCH "/posts/7" for ::1 at 2015-11-11 22:03:42 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qhX9gGMAnveWZG2EF4R3i1qzfBU0BVH75vdxrK3uivMKmO0YBOhrKY42wZleDA6wdxf4z3a5aMt7eWfJqzMxlw==", "post"=>{"category_id"=>"1", "title"=>"Jumper by Third Eye Blind", "body"=>"<p>I wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nThe angry boy a bit too insane&nbsp;<br />\r\nIcing over a secret pain&nbsp;<br />\r\nYou know you don&#39;t belong&nbsp;<br />\r\nYou&#39;re the first to fight&nbsp;<br />\r\nYou&#39;re way too loud&nbsp;<br />\r\nYou&#39;re the flash of light on a burial shroud&nbsp;<br />\r\nI know something&#39;s wrong&nbsp;<br />\r\nWell everyone I know has got a reason&nbsp;<br />\r\nTo say put the past away&nbsp;<br />\r\nI wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nWell he&#39;s on the table and he&#39;s gone to code&nbsp;<br />\r\nAnd I do not think anyone knows&nbsp;<br />\r\nWhat they&#39;re doing here&nbsp;<br />\r\nAnd your friends have left you&nbsp;<br />\r\nYou&#39;ve been dismissed&nbsp;<br />\r\nI never thought it would come to this&nbsp;<br />\r\nAnd I, I want you to know&nbsp;<br />\r\nEveryone&#39;s got to face down the demons&nbsp;<br />\r\nMaybe today&nbsp;<br />\r\nYou could put the past away&nbsp;<br />\r\nI wish you would step back from&nbsp;<br />\r\nThat ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nCan you put the past away</p>\r\n"}, "commit"=>"Update Post", "id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Jumper by Third Eye Blind' AND "posts"."id" != 7) LIMIT 1[0m
+  [1m[35mPost Exists (0.3ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p>I wish you would step back&nbsp;<br />
+From that ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+The angry boy a bit too insane&nbsp;<br />
+Icing over a secret pain&nbsp;<br />
+You know you don&#39;t belong&nbsp;<br />
+You&#39;re the first to fight&nbsp;<br />
+You&#39;re way too loud&nbsp;<br />
+You&#39;re the flash of light on a burial shroud&nbsp;<br />
+I know something&#39;s wrong&nbsp;<br />
+Well everyone I know has got a reason&nbsp;<br />
+To say put the past away&nbsp;<br />
+I wish you would step back&nbsp;<br />
+From that ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+Well he&#39;s on the table and he&#39;s gone to code&nbsp;<br />
+And I do not think anyone knows&nbsp;<br />
+What they&#39;re doing here&nbsp;<br />
+And your friends have left you&nbsp;<br />
+You&#39;ve been dismissed&nbsp;<br />
+I never thought it would come to this&nbsp;<br />
+And I, I want you to know&nbsp;<br />
+Everyone&#39;s got to face down the demons&nbsp;<br />
+Maybe today&nbsp;<br />
+You could put the past away&nbsp;<br />
+I wish you would step back from&nbsp;<br />
+That ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+Can you put the past away</p>
+' AND "posts"."id" != 7) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 13ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/7" for ::1 at 2015-11-11 22:03:42 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  Rendered posts/_side_bar.html.erb (5.0ms)
+  Rendered posts/show.html.erb within layouts/application (8.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 114ms (Views: 112.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:03:45 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (9.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 106ms (Views: 103.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:04:12 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:04:12 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 22:09:41 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:09:41 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 22:11:02 -0800
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:37: syntax error, unexpected keyword_end, expecting ')'
+....safe_append='    '.freeze; end ;@output_buffer.safe_append=...
+...                               ^
+/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+...er.safe_append='  '.freeze; end ;@output_buffer.safe_append=...
+...                               ^
+/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:41: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:43: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/index.html.erb:37: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:41: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/index.html.erb:43: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.9ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (88.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:11:15 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (comparison of Fixnum with String failed):
+    28:           <!-- this will show only 200 character of the body to continue reading
+    29:           use needs to click on blog to view full content and other functions -->
+    30:           <p>
+    31:             <%= truncate(raw(item.body), ommision: "...Read More", length: "300") %>
+    32:             <%#= truncate(item.body.html_safe, :ommision => "...Read More",
+    33:                                      :length => 300) %>
+    34:           </p>
+  app/views/posts/index.html.erb:31:in `block in _app_views_posts_index_html_erb__4353675924184495607_70123172357880'
+  app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb__4353675924184495607_70123172357880'
+
+
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.1ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.1ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (87.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:11:54 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    28:           <!-- this will show only 200 character of the body to continue reading
+    29:           use needs to click on blog to view full content and other functions -->
+    30:           <p>
+    31:             <%= raw(truncate(item.body), ommision: "...Read More", length: "300") %>
+    32:             <%#= truncate(item.body.html_safe, :ommision => "...Read More",
+    33:                                      :length => 300) %>
+    34:           </p>
+  app/views/posts/index.html.erb:31:in `block in _app_views_posts_index_html_erb__4353675924184495607_70123159736980'
+  app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb__4353675924184495607_70123159736980'
+
+
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.8ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.9ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (84.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:12:56 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (comparison of Fixnum with String failed):
+    28:           <!-- this will show only 200 character of the body to continue reading
+    29:           use needs to click on blog to view full content and other functions -->
+    30:           <p>
+    31:             <%= truncate(raw(item.body), :ommision => "...Read More", :length => "300") %>
+    32:             <%#= truncate(item.body.html_safe, :ommision => "...Read More",
+    33:                                      :length => 300) %>
+    34:           </p>
+  app/views/posts/index.html.erb:31:in `block in _app_views_posts_index_html_erb__4353675924184495607_70123211049000'
+  app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb__4353675924184495607_70123211049000'
+
+
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.1ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (87.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:14:00 -0800
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:31: syntax error, unexpected ',', expecting ')'
+... truncate(item.body.html_safe), ommision: "...Read More", le...
+...                               ^
+/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:31: syntax error, unexpected ',', expecting ')'
+...afe), ommision: "...Read More", length: "300") );@output_buf...
+...                               ^
+/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:31: syntax error, unexpected ')', expecting keyword_end
+......Read More", length: "300") );@output_buffer.safe_append='
+...                               ^):
+  app/views/posts/index.html.erb:31: syntax error, unexpected ',', expecting ')'
+  app/views/posts/index.html.erb:31: syntax error, unexpected ',', expecting ')'
+  app/views/posts/index.html.erb:31: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.7ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:14:17 -0800
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:31: syntax error, unexpected ',', expecting ')'
+...r.append=( truncate(item.body), ommision: "...Read More", le...
+...                               ^
+/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:31: syntax error, unexpected ',', expecting ')'
+...ody), ommision: "...Read More", length: "300") );@output_buf...
+...                               ^
+/Users/ivyr/Development/GitHub/public/my-blog-with-ruby-on-rails/app/views/posts/index.html.erb:31: syntax error, unexpected ')', expecting keyword_end
+......Read More", length: "300") );@output_buffer.safe_append='
+...                               ^):
+  app/views/posts/index.html.erb:31: syntax error, unexpected ',', expecting ')'
+  app/views/posts/index.html.erb:31: syntax error, unexpected ',', expecting ')'
+  app/views/posts/index.html.erb:31: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (86.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:14:44 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (comparison of Fixnum with String failed):
+    28:           <!-- this will show only 200 character of the body to continue reading
+    29:           use needs to click on blog to view full content and other functions -->
+    30:           <p>
+    31:             <%= truncate((item.body), ommision: "...Read More", length: "300") %>
+    32:             <%#= truncate(item.body.html_safe, :ommision => "...Read More",
+    33:                                      :length => 300) %>
+    34:           </p>
+  app/views/posts/index.html.erb:31:in `block in _app_views_posts_index_html_erb__4353675924184495607_70123218941160'
+  app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb__4353675924184495607_70123218941160'
+
+
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.0ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/ivyr/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (88.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:15:46 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 109ms (Views: 106.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:15:46 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 22:16:13 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 104ms (Views: 102.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:16:13 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:16:13 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:16:13 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:16:13 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:16:13 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:16:13 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:16:13 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:16:14 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 22:16:36 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:16:36 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 22:17:04 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 107ms (Views: 105.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:17:04 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 22:39:28 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (38.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 321ms (Views: 301.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:39:29 -0800
+
+
+Started GET "/posts/7" for ::1 at 2015-11-11 22:39:32 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  Rendered posts/_side_bar.html.erb (35.1ms)
+  Rendered posts/show.html.erb within layouts/application (43.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 185ms (Views: 175.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/7/edit" for ::1 at 2015-11-11 22:39:35 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered posts/_blog_post_form.html.erb (6.5ms)
+  Rendered posts/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 140ms (Views: 129.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 22:39:35 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 22:39:35 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 22:39:35 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 22:39:35 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 22:39:36 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 22:39:36 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 22:39:39 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 22:39:39 -0800
+
+
+Started PATCH "/posts/7" for ::1 at 2015-11-11 22:39:44 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"55CBhR+XjxuvjElHWC6rRubjaOjXt+2+MnURX1tDTFJHHZEdeH96xbfe5VoRptJ9y0fsMpUL1I6v+wc6XZ73Ng==", "post"=>{"category_id"=>"1", "title"=>"Jumper by Third Eye Blind", "body"=>"<p>I wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nThe angry boy a bit too insane&nbsp;<br />\r\nIcing over a secret pain&nbsp;<br />\r\nYou know you don&#39;t belong&nbsp;<br />\r\nYou&#39;re the first to fight&nbsp;<br />\r\nYou&#39;re way too loud&nbsp;<br />\r\nYou&#39;re the flash of light on a burial shroud&nbsp;<br />\r\nI know something&#39;s wrong&nbsp;<br />\r\nWell everyone I know has got a reason&nbsp;<br />\r\nTo say put the past away&nbsp;<br />\r\nI wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nWell he&#39;s on the table and he&#39;s gone to code&nbsp;<br />\r\nAnd I do not think anyone knows&nbsp;<br />\r\nWhat they&#39;re doing here&nbsp;<br />\r\nAnd your friends have left you&nbsp;<br />\r\nYou&#39;ve been dismissed&nbsp;<br />\r\nI never thought it would come to this&nbsp;<br />\r\nAnd I, I want you to know&nbsp;<br />\r\nEveryone&#39;s got to face down the demons&nbsp;<br />\r\nMaybe today&nbsp;<br />\r\nYou could put the past away&nbsp;<br />\r\nI wish you would step back from&nbsp;<br />\r\nThat ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nCan you put the past away</p>\r\n"}, "commit"=>"Update Post", "id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Jumper by Third Eye Blind' AND "posts"."id" != 7) LIMIT 1[0m
+  [1m[35mPost Exists (0.3ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p>I wish you would step back&nbsp;<br />
+From that ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+The angry boy a bit too insane&nbsp;<br />
+Icing over a secret pain&nbsp;<br />
+You know you don&#39;t belong&nbsp;<br />
+You&#39;re the first to fight&nbsp;<br />
+You&#39;re way too loud&nbsp;<br />
+You&#39;re the flash of light on a burial shroud&nbsp;<br />
+I know something&#39;s wrong&nbsp;<br />
+Well everyone I know has got a reason&nbsp;<br />
+To say put the past away&nbsp;<br />
+I wish you would step back&nbsp;<br />
+From that ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+Well he&#39;s on the table and he&#39;s gone to code&nbsp;<br />
+And I do not think anyone knows&nbsp;<br />
+What they&#39;re doing here&nbsp;<br />
+And your friends have left you&nbsp;<br />
+You&#39;ve been dismissed&nbsp;<br />
+I never thought it would come to this&nbsp;<br />
+And I, I want you to know&nbsp;<br />
+Everyone&#39;s got to face down the demons&nbsp;<br />
+Maybe today&nbsp;<br />
+You could put the past away&nbsp;<br />
+I wish you would step back from&nbsp;<br />
+That ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+Can you put the past away</p>
+' AND "posts"."id" != 7) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 12ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/7" for ::1 at 2015-11-11 22:39:44 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  Rendered posts/_side_bar.html.erb (6.3ms)
+  Rendered posts/show.html.erb within layouts/application (9.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 114ms (Views: 111.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:39:48 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 108ms (Views: 106.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:42:15 -0800
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 104ms (Views: 102.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:42:16 -0800
+
+
+Started GET "/posts/7" for ::1 at 2015-11-11 22:42:21 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  Rendered posts/_side_bar.html.erb (3.2ms)
+  Rendered posts/show.html.erb within layouts/application (6.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 104ms (Views: 102.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/7/edit" for ::1 at 2015-11-11 22:42:41 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered posts/_blog_post_form.html.erb (1.8ms)
+  Rendered posts/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 107ms (Views: 104.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 22:42:41 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 22:42:41 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 22:42:41 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 22:42:41 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 22:42:41 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 22:42:41 -0800
+
+
+Started PATCH "/posts/7" for ::1 at 2015-11-11 22:42:45 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"306mulRIRrWSClCKkhfuYxMK4lXyId4b/ZA1Zjye65J/w7YiM6Cza4pY/Jfbn5dYPq5mj7Cd5ytgHiMDOkNQ9g==", "post"=>{"category_id"=>"1", "title"=>"Jumper by Third Eye Blind", "body"=>"<p>I wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nThe angry boy a bit too insane&nbsp;<br />\r\nIcing over a secret pain&nbsp;<br />\r\nYou know you don&#39;t belong&nbsp;<br />\r\nYou&#39;re the first to fight&nbsp;<br />\r\nYou&#39;re way too loud&nbsp;<br />\r\nYou&#39;re the flash of light on a burial shroud&nbsp;<br />\r\nI know something&#39;s wrong&nbsp;<br />\r\nWell everyone I know has got a reason&nbsp;<br />\r\nTo say put the past away&nbsp;<br />\r\nI wish you would step back&nbsp;<br />\r\nFrom that ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nWell he&#39;s on the table and he&#39;s gone to code&nbsp;<br />\r\nAnd I do not think anyone knows&nbsp;<br />\r\nWhat they&#39;re doing here&nbsp;<br />\r\nAnd your friends have left you&nbsp;<br />\r\nYou&#39;ve been dismissed&nbsp;<br />\r\nI never thought it would come to this&nbsp;<br />\r\nAnd I, I want you to know&nbsp;<br />\r\nEveryone&#39;s got to face down the demons&nbsp;<br />\r\nMaybe today&nbsp;<br />\r\nYou could put the past away&nbsp;<br />\r\nI wish you would step back from&nbsp;<br />\r\nThat ledge my friend&nbsp;<br />\r\nYou could cut ties with all the lies&nbsp;<br />\r\nThat you&#39;ve been living in&nbsp;<br />\r\nAnd if you do not want to see me again&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nI would understand, I would understand&nbsp;<br />\r\nCan you put the past away</p>\r\n"}, "commit"=>"Update Post", "id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.3ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Jumper by Third Eye Blind' AND "posts"."id" != 7) LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p>I wish you would step back&nbsp;<br />
+From that ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+The angry boy a bit too insane&nbsp;<br />
+Icing over a secret pain&nbsp;<br />
+You know you don&#39;t belong&nbsp;<br />
+You&#39;re the first to fight&nbsp;<br />
+You&#39;re way too loud&nbsp;<br />
+You&#39;re the flash of light on a burial shroud&nbsp;<br />
+I know something&#39;s wrong&nbsp;<br />
+Well everyone I know has got a reason&nbsp;<br />
+To say put the past away&nbsp;<br />
+I wish you would step back&nbsp;<br />
+From that ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+Well he&#39;s on the table and he&#39;s gone to code&nbsp;<br />
+And I do not think anyone knows&nbsp;<br />
+What they&#39;re doing here&nbsp;<br />
+And your friends have left you&nbsp;<br />
+You&#39;ve been dismissed&nbsp;<br />
+I never thought it would come to this&nbsp;<br />
+And I, I want you to know&nbsp;<br />
+Everyone&#39;s got to face down the demons&nbsp;<br />
+Maybe today&nbsp;<br />
+You could put the past away&nbsp;<br />
+I wish you would step back from&nbsp;<br />
+That ledge my friend&nbsp;<br />
+You could cut ties with all the lies&nbsp;<br />
+That you&#39;ve been living in&nbsp;<br />
+And if you do not want to see me again&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+I would understand, I would understand&nbsp;<br />
+Can you put the past away</p>
+' AND "posts"."id" != 7) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/7" for ::1 at 2015-11-11 22:42:45 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+  Rendered posts/_side_bar.html.erb (3.2ms)
+  Rendered posts/show.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 117ms (Views: 115.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:42:46 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 106ms (Views: 103.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:43:16 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 113ms (Views: 111.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-7d9aa49a21b9ffd37aab32088fb9c356f5c9b4aea0d74907e741db9be0f372f9.css?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/home.self-f00281699ab01f0c09534bf654e69a1d9156fa2bad1195f04b4ce920348ab740.css?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/posts.self-8087f970e4f5c058961608cdd4c999a275ab9404bf8fb533a554e8ae32afe8f0.css?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/ckeditor/init.self-2f3e80b764bc18c9362e6f3326e1f32d4a8bdceff67345a3453a93b111626ff3.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/ckeditor/ckeditor.self-4195c5ebbf16e4a67e9ac4edbdf92c87e1104948d1f76c1469007e691b0fac25.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-11-11 22:43:16 -0800
+
+
+Started GET "/" for ::1 at 2015-11-11 22:43:38 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 110ms (Views: 108.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-11-11 22:43:49 -0800
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered posts/_blog_post_form.html.erb (1.9ms)
+  Rendered posts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 22:43:49 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 22:43:49 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 22:43:49 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 22:43:49 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 22:43:49 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 22:43:49 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 22:44:14 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 22:44:14 -0800
+
+
+Started POST "/posts" for ::1 at 2015-11-11 22:44:36 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hkgNUWRztAZ0Hj3m0M28mvZkfDrfRJoujllIKTPM9wkmxR3JA5tB2GxMkfuZRcWh28D44J34ox4T115MNRFMbQ==", "post"=>{"category_id"=>"2", "title"=>"Tips New Post Test4", "body"=>"<p><strong>This is a test.</strong></p>\r\n\r\n<h2 style=\"font-style:italic;\">This maybe an italic title in a new blog post.</h2>\r\n"}, "commit"=>"Create Post"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts" WHERE "posts"."title" = 'Tips New Post Test4' LIMIT 1
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE "posts"."body" = '<p><strong>This is a test.</strong></p>
+
+<h2 style="font-style:italic;">This maybe an italic title in a new blog post.</h2>
+' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "posts" ("title", "body", "category_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "Tips New Post Test4"], ["body", "<p><strong>This is a test.</strong></p>\r\n\r\n<h2 style=\"font-style:italic;\">This maybe an italic title in a new blog post.</h2>\r\n"], ["category_id", 2], ["user_id", 1], ["created_at", "2015-11-12 06:44:36.512858"], ["updated_at", "2015-11-12 06:44:36.512858"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-11 22:44:36 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 107ms (Views: 105.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/33" for ::1 at 2015-11-11 22:44:43 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 33]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 33]]
+  Rendered posts/_side_bar.html.erb (3.0ms)
+  Rendered posts/show.html.erb within layouts/application (6.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 113ms (Views: 110.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/33/edit" for ::1 at 2015-11-11 22:44:45 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"33"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered posts/_blog_post_form.html.erb (2.3ms)
+  Rendered posts/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 103ms (Views: 100.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/ckeditor/config.js?t=F969" for ::1 at 2015-11-11 22:44:45 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/editor.css?t=F969" for ::1 at 2015-11-11 22:44:46 -0800
+
+
+Started GET "/assets/ckeditor/lang/en.js?t=F969" for ::1 at 2015-11-11 22:44:46 -0800
+
+
+Started GET "/assets/ckeditor/styles.js?t=F969" for ::1 at 2015-11-11 22:44:46 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/icons_hidpi.png" for ::1 at 2015-11-11 22:44:46 -0800
+
+
+Started GET "/assets/ckeditor/contents.css?t=F969" for ::1 at 2015-11-11 22:44:46 -0800
+
+
+Started GET "/assets/ckeditor/plugins/image/dialogs/image.js?t=F969" for ::1 at 2015-11-11 22:44:49 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/dialog.css?t=F969" for ::1 at 2015-11-11 22:44:49 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/images/hidpi/refresh.png" for ::1 at 2015-11-11 22:44:49 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/images/hidpi/lock.png" for ::1 at 2015-11-11 22:44:49 -0800
+
+
+Started GET "/assets/ckeditor/skins/moono/images/hidpi/close.png" for ::1 at 2015-11-11 22:44:49 -0800
+
+
+Started POST "/ckeditor/pictures?CKEditor=post_body&CKEditorFuncNum=1&langCode=en&authenticity_token=s5q22tKqUNsNB6XsMNhJ%2FUH1fr0h1P60HjhwrAMS5FETF6ZCtUKlBRVVCfF5UDDGbFH6Z2Nox4SDtmbJBc9fNQ%3D%3D" for ::1 at 2015-11-11 22:45:33 -0800
+Processing by Ckeditor::PicturesController#create as HTML
+  Parameters: {"upload"=>#<ActionDispatch::Http::UploadedFile:0x007f87a07e67b8 @tempfile=#<Tempfile:/var/folders/jx/07l7bnw12dj188d9ldh6tvxm0000gn/T/RackMultipart20151111-4005-1fpcedf.pdf>, @original_filename="Atom Editor Keyboard Shortcut Cheat Sheet - Bugsnag.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"upload\"; filename=\"Atom Editor Keyboard Shortcut Cheat Sheet - Bugsnag.pdf\"\r\nContent-Type: application/pdf\r\n">, "CKEditor"=>"post_body", "CKEditorFuncNum"=>"1", "langCode"=>"en", "authenticity_token"=>"s5q22tKqUNsNB6XsMNhJ/UH1fr0h1P60HjhwrAMS5FETF6ZCtUKlBRVVCfF5UDDGbFH6Z2Nox4SDtmbJBc9fNQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 31ms (Views: 1.6ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/posts/33" for ::1 at 2015-11-11 22:45:42 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sBqki14fv2L/D1mhCKEFgsC0m2+chscNrvFesl2S5xcQl7QTOfdKvOdd9bxBKXy57RAftd46/j0zf0jXW09ccw==", "post"=>{"category_id"=>"1", "title"=>"Tips New Post Test4", "body"=>"<p><strong>This is a test.</strong></p>\r\n\r\n<h2 style=\"font-style:italic;\">This maybe an italic title in a new blog post.</h2>\r\n"}, "commit"=>"Update Post", "id"=>"33"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."title" = 'Tips New Post Test4' AND "posts"."id" != 33) LIMIT 1[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."body" = '<p><strong>This is a test.</strong></p>
+
+<h2 style="font-style:italic;">This maybe an italic title in a new blog post.</h2>
+' AND "posts"."id" != 33) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "category_id" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["category_id", 1], ["updated_at", "2015-11-12 06:45:42.096272"], ["id", 33]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/33
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/33" for ::1 at 2015-11-11 22:45:42 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 33]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 33]]
+  Rendered posts/_side_bar.html.erb (3.8ms)
+  Rendered posts/show.html.erb within layouts/application (6.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 111ms (Views: 108.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-11 22:45:48 -0800
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."updated_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 122ms (Views: 119.7ms | ActiveRecord: 1.1ms)

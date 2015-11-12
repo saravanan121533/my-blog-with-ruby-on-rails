@@ -60,7 +60,7 @@ blog post and the right container will display all the previous comments posted 
 
     <!-- Blog post content container -->
     <li class="list-group-item">
-      <%= @post.body %>
+      <%= raw(@post.body) %>
     </li>
   </ul>
 </div>  <!-- end of left container -->

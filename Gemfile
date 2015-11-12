@@ -22,6 +22,15 @@ gem 'bcrypt', '~> 3.1.7'
 # handling for permission
 gem 'cancancan', '~> 1.10'
 gem "rails-erd"
+
+###### START WYSIWYG editor & related gems ######
+gem "ckeditor"
+# gem "paperclip"
+gem 'carrierwave'
+gem 'mini_magick'
+# RMagick is an interface between Ruby and ImageMagick
+# gem 'rmagick', '~> 2.15', '>= 2.15.2'
+###### END WYSIWYG editor & related gems ######
 ########## END Added Gems ##############
 
 # Use jquery as the JavaScript library

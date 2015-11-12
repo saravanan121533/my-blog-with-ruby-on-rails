@@ -27,8 +27,10 @@
         <li class="list-group-item">
           <!-- this will show only 200 character of the body to continue reading
           use needs to click on blog to view full content and other functions -->
-          <p><%= truncate(item.body, :ommision => "... Read More",
-                                     :length => 300) %></p>
+          <p>
+            <%= raw item.body.truncate(300) %>
+            <%#= truncate(item.body, ommision: "...Read More", length: 300) %>
+          </p>
         </li>
       </ul>
     <% end %> <!-- and of loop -->

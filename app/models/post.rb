@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   # validation for post model
   validates :title, presence: true, uniqueness: true
+  validates :body, presence: true, uniqueness: true
 
   # scope :post_params, -> {params.require(:post).permit([:title, :body])}
 
