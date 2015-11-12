@@ -1,6 +1,21 @@
 <!-- The page display is divided into two where left container display all the
 blog post and the right container will display all the previous comments posted -->
-<div class="container col-md-8">
+<div class="container col-md-7">
+
+  <!-- Post Error handling -->
+  <% if @post.errors.any? %>
+    <div class="container alert alert-danger" role="alert">
+      <%= @post.errors.full_messages.join(", ") %>
+    </div>
+  <% end %>
+
+  <!-- Comments Error handling -->
+  <% if @comment.errors.any? %>
+    <div class="container alert alert-danger" role="alert">
+      <%= @comment.errors.full_messages.join(", ") %>
+    </div>
+  <% end %>
+
   <ul class="list-group">
     <!-- Blog Post Header container -->
     <li class="list-group-item list-group-item-info">
@@ -16,14 +31,30 @@ blog post and the right container will display all the previous comments posted 
 
       <!-- This will display the action icons at container header -->
       <div id="action-icons">
-        <%= link_to edit_post_path do %>
-          <i class="glyphicon glyphicon-edit"
-            aria-hidden="true" style="color: blue"></i>
-        <% end %>
-        <%= link_to post_path, method: :delete, data: {confirm: "Are you sure?"} do %>
-          <i class="glyphicon glyphicon-trash"
-            aria-hidden="true"></i>
-        <% end %>
+
+        <!-- check if current user has the ability to edit the post -->
+        <%# if can? :edit, @post  %>
+          <%= link_to edit_post_path do %>
+            <i class="glyphicon glyphicon-edit"
+              aria-hidden="true" style="color: blue"></i>
+          <% end %>
+        <%# else %>
+          <!-- <div class="container alert alert-danger" role="alert">
+            <span>Error: You don't have edit permission.</span>
+          </div> -->
+        <%# end %>
+
+        <!-- check if current user has the ability to delete the post -->
+        <%# if can? :destroy, @post  %>
+          <%= link_to post_path, method: :delete, data: {confirm: "Are you use you want to delete this comment?"} do %>
+            <i class="glyphicon glyphicon-trash"
+              aria-hidden="true"></i>
+          <% end %>
+          <%# else %>
+            <!-- <div class="container alert alert-danger" role="alert">
+              <span>Error: You don't have delete permission.</span>
+            </div> -->
+        <%# end %>
       </div> <!-- end of icons container -->
     </li> <!-- end of header container -->
 
@@ -32,23 +63,9 @@ blog post and the right container will display all the previous comments posted 
       <%= @post.body %>
     </li>
   </ul>
-
-  <!-- This is a form that enables user to post a comment for this specific blog post -->
-  <ul class="list-group">
-    <li class="list-group-item list-group-item-info">
-      <h4>Post a Comment</h4>
-    </li>
-
-    <%= form_for [@post, @comment] do |f| %>
-      <li class="list-group-item">
-        <% f.label :body %>
-        <%= f.text_area :body, class: "form-control"%>
-      </li>
-      <%= f.submit class: "btn btn-primary" %>
-    <% end %>
 </div>  <!-- end of left container -->
 
 <!-- right container: This will display all the previous comments posted -->
-<div class="container col-md-4">
+<div class="container col-md-5">
   <%= render "side_bar" %>
 </div>

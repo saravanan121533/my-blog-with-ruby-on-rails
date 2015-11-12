@@ -117,3 +117,25 @@ Starting a Blog app to showcase my web development technical skills that I learn
 11. Implement comments at specific blog post.
 
 12. Add .gitignore so that /tmp files will not be added during git commit.
+
+
+#### ERD
+1. A user has many comments, and a comment belongs to a user
+2. A user has many posts, and a post belongs to a user
+3. A post has many comments, and a comment belongs to a post
+4. [NY] A category has many post, and a post belongs to a category
+5. Contact ?
+
+#### Sign-Up
+1. [Views] `root_path` /posts/index.html.erb
+  - display existing blog posts
+2. [Action] user clicks Sign-Up button
+3. [Model] users
+  - validates email
+4. [Controller] `new_user_path` users#new
+  - instantiate user object
+4. [Views] `new_user_path` /user/new.html.erb
+  - Sign-up page is displayed
+5. [Action] user inputs neccessary information and click Create User
+6. [Controller] `users_path` users#create
+  - get user input from params

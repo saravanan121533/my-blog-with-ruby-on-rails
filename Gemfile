@@ -14,7 +14,15 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'bootstrap-sass'
+########## START Added Gems ##############
+# bootstrap nice web look
+gem "bootstrap-sass"
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
+# handling for permission
+gem 'cancancan', '~> 1.10'
+gem "rails-erd"
+########## END Added Gems ##############
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -24,9 +32,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -38,10 +43,12 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
+  ########## START Added Gems ##############
   # we use the three gems below for a nicer Rails console display
   gem "awesome_print"
   gem "interactive_editor"
   gem "hirb"
+  ########## END Added Gems ##############
 end
 
 group :development do

@@ -1,0 +1,13 @@
+<ul class="list-group">
+  <li class="list-group-item list-group-item-info">
+    <h4>Edit the Comment</h4>
+  </li>
+
+  <%= form_for [@post, @comment] do |f| %>
+    <li class="list-group-item">
+      <% f.label :body %>
+      <%= f.text_area :body, class: "form-control"%>
+      <%= f.submit class: "btn btn-primary" %>
+    </li>
+  <% end %>
+</ul>
