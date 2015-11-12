@@ -18,6 +18,7 @@ class PostsController < ApplicationController
   # this is the controller for the add new blog post found in nav bag
   def new
     @post = Post.new
+    @category_options = Category.all.map{|u| [u.title, u.id]}
   end
 
   # this is the post method for the add new blog post after user clicked
@@ -38,6 +39,7 @@ class PostsController < ApplicationController
   def edit
     # checking if the user has the ability to modify if not error
     # redirect_to root_path, alert: "Access denied." unless can? :edit, @post
+    @category_options = Category.all.map{|u| [u.title, u.id]}
   end
 
   # this is the post method for edit a blog post this will be called after the
@@ -66,7 +68,7 @@ class PostsController < ApplicationController
 
   def post_params
     # this will "sanitize" the user input that will be permitted to the DB
-    params.require(:post).permit([:title, :body, :user_id])
+    params.require(:post).permit([:title, :body, :user_id, :category_id])
   end
 
   def find_post

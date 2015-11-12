@@ -1,13 +1,27 @@
 <%= form_for @post do |f| %>
   <div class="container col-md-12">
     <ul class="list-group">
-      <li class="list-group-item list-group-item-info">
-        <%= f.label :title %>
-        <%= f.text_field :title %>
+      <li class="list-group-item active">
+        <h4>Blog Info</h4>
       </li>
+
       <li class="list-group-item">
-        <%= f.label :body %>
-        <%= f.text_area :body, class: "form-control", size: "60x12" %>
+        <%= f.label("Category") %>
+        <!-- dropdown menu: @category_options is is generated at the controller
+        where in it a array containing [title, id] and user input will be
+        stored in the category_id -->
+        <%= f.select(:category_id, options_for_select(@category_options),
+             class: "dropdown-menu") %>
+      </li>
+
+      <li class="list-group-item">
+        <%= f.label(:title) %>
+        <%= f.text_field(:title) %>
+      </li>
+
+      <li class="list-group-item">
+        <%= f.label(:body) %>
+        <%= f.text_area(:body, class: "form-control", size: "60x12") %>
       </li>
     </ul>
   </div>

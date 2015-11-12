@@ -24,13 +24,13 @@ blog post and the right container will display all the previous comments posted 
         <h3><%= @post.title %></h3>
       </div>
 
-      <!-- This will display the blog post title  at container header -->
-      <div>
-        <%= @post.updated_at %>
-      </div>
-
       <!-- This will display the action icons at container header -->
       <div id="action-icons">
+        <!-- This will display the blog post title  at container header -->
+        <span class="list-group-item-text">
+          Posted By <%= @post.user.first_name %>
+          <%= @post.updated_at.strftime("on %b %d, %Y") %>
+        </span>
 
         <!-- check if current user has the ability to edit the post -->
         <%# if can? :edit, @post  %>

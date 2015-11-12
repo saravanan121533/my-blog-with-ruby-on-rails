@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create] do
     delete :destroy, on: :collection
   end
+
+  # routes for category
+  resources :categories
 end
