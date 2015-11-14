@@ -8,11 +8,15 @@ class PostsController < ApplicationController
 
   # this will add permission checking if user has the ability to perform actions
   # see private method
-  # note: always do this after params getting
+  # note: always do this after params getting because it will give access denied error
+  # because @post will be always nil
   before_action(:authorize, {only: [:edit, :update, :destroy]})
   # this is the controller for the index page which will show all the blog post
   def index
-    @posts = Post.all.order(updated_at: :desc)
+    # the query will be used for the search functionality, the search method
+    # is defined in the post model
+    @query    = params[:query]
+    @posts = Post.order(updated_at: :desc).search(params[:query])
   end
 
   # this is the controller for the add new blog post found in nav bag
