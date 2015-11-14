@@ -1,53 +1,38 @@
-<!-- Check if controller has a flash notice/alert and display it -->
-<% if flash[:notice] %>
-  <div class="alert alert-info" role="alert">
-    <%= flash[:notice] %>
-  </div>
-<% end %>
-<% if flash[:alert] %>
-  <div class="alert alert-warning" role="alert">
-    <%= flash[:alert] %>
-  </div>
-<% end %>
+<!-- check if there's an available blog to display -->
+<% if @posts.empty? %>
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-info">
+      <!-- if there are no blogs available at the DB, No items to display -->
+      <p>No items to display</p>
+    </li>
+  </ul>
 
-<!-- This page will display all blog post -->
-<div class="container col-md-11">
-
-  <% if @posts.empty? %>
+<% else %>
+  <!-- loop through all the data retrieve and display -->
+  <% @posts.each do |item| %>
     <ul class="list-group">
       <li class="list-group-item list-group-item-info">
-        <!-- if there are no blogs available at the DB, No items to display -->
-        <p>No items to display</p>
+          <%= link_to post_path(item) do %>
+            <strong>
+              [<%= item.category.title.capitalize %>]
+              <%= item.title %>
+            </strong>
+          <% end %>
+
+          <!-- date display entry updated date -->
+          <p>
+            Posted By <%= item.user.first_name %>
+            <%= item.updated_at.strftime("on %b %d, %Y") %>
+          </p>
+      </li>
+
+      <li class="list-group-item">
+        <!-- this will show only 200 character of the body to continue reading
+        use needs to click on blog to view full content and other functions -->
+        <p>
+          <%= raw item.body.truncate(300) %>
+        </p>
       </li>
     </ul>
-  <% else %>
-    <!-- loop through all the data retrieve and display -->
-    <% @posts.each do |item| %>
-      <ul class="list-group">
-        <li class="list-group-item list-group-item-info">
-            <%= link_to post_path(item) do %>
-              <strong>
-                [<%= item.category.title.capitalize %>]
-                <%= item.title %>
-              </strong>
-            <% end %>
-
-            <!-- date display entry updated date -->
-            <p>
-              Posted By <%= item.user.first_name %>
-              <%= item.updated_at.strftime("on %b %d, %Y") %>
-            </p>
-        </li>
-
-        <li class="list-group-item">
-          <!-- this will show only 200 character of the body to continue reading
-          use needs to click on blog to view full content and other functions -->
-          <p>
-            <%= raw item.body.truncate(300) %>
-            <%#= truncate(item.body, ommision: "...Read More", length: 300) %>
-          </p>
-        </li>
-      </ul>
-    <% end %> <!-- and of loop -->
-  <% end %> <!-- end of if-else statement -->
-</div>
+  <% end %> <!-- and of loop -->
+<% end %> <!-- end of if-else statement -->

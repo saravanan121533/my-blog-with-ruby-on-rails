@@ -2,22 +2,26 @@ class ApplicationController < ActionController::Base
 
   include CanCan::ControllerAdditions
 
+  # for side_bar information
+  def get_categories
+    @sd_categories = Category.all
+  end
+  helper_method :get_categories
+
+  def get_category_post_count(cat)
+    @sd_posts = Post.where(category_id: cat).count
+  end
+  helper_method :get_category_post_count
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-
-  # def has_display_error?
-  #   if @user.errors.any?
-  #     @user.errors.full_messages.join(", ")
-  #   end
-  # end
-  # helper_method :has_display_error?
 
   def authenticate_user
     # check if current user is signed in
     redirect_to new_session_path, alert: "Please sign in!" unless user_signed_in?
   end
-  
+
   # check if current_user exist in the sessions and assign it in the global
   # variable @current_user that will be used  in controller
   def current_user
@@ -31,6 +35,5 @@ class ApplicationController < ActionController::Base
     current_user.present?
   end
   helper_method :user_signed_in?
-
 
 end

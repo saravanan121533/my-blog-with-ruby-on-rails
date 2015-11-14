@@ -14,7 +14,11 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @category = Category.find(params[:id])
+    # for specific category display of blog, this is when a user will click
+    # the side bar on a specific category
+    @posts = Post.where(category_id: params[:id]).order(updated_at: :desc)
+    # for side_bar display of categories
+    @categories = Category.all
   end
 
 end

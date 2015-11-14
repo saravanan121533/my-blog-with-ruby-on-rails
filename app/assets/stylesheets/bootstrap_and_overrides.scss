@@ -1,2 +1,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// adjust top margin for buttons to give it a little space from previous element
+.btn {
+  margin-top: 15px;
+}
+
+// customization for search button so that it will not inherit the .btn style
+#search {
+  margin-top: 0;
+  margin-left: 1px;
+}
+
+// customization of page title so that it will align to the side_bar
+h3 {
+  margin-top: 0;
+}

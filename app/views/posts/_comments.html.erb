@@ -1,3 +1,18 @@
+<!-- This is a form that enables user to post a comment for this specific blog post -->
+<ul class="list-group">
+  <li class="list-group-item list-group-item-info">
+    <h4>Post a Comment</h4>
+  </li>
+
+  <%= form_for [@post, @comment] do |f| %>
+    <li class="list-group-item">
+      <% f.label :body %>
+      <%= f.text_area :body, class: "form-control"%>
+      <%= f.submit class: "btn btn-primary" %>
+    </li>
+  <% end %>
+</ul>
+
 <!-- All previous comments will be posted in the right side bar -->
 <div class="panel panel-primary">
   <!-- This is the heading of the right side bar -->
@@ -48,18 +63,3 @@
     <% end %>
   </ul>
 </div>
-
-<!-- This is a form that enables user to post a comment for this specific blog post -->
-<ul class="list-group">
-  <li class="list-group-item list-group-item-info">
-    <h4>Post a Comment</h4>
-  </li>
-
-  <%= form_for [@post, @comment] do |f| %>
-    <li class="list-group-item">
-      <% f.label :body %>
-      <%= f.text_area :body, class: "form-control"%>
-      <%= f.submit class: "btn btn-primary" %>
-    </li>
-  <% end %>
-</ul>

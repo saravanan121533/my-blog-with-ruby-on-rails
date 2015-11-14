@@ -6,7 +6,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <!-- meta for bootstrap mobile first design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+       maximum-scale=1, user-scalable=no">
   </head>
 
   <body>
@@ -15,10 +16,6 @@
         <ul class="nav navbar-nav pull-left">
           <li>
             <%= link_to "Home", root_path %>
-          </li>
-          <!-- need to fix this route that post#index will be called from home -->
-          <li>
-            <%= link_to "Blog", posts_path %>
           </li>
           <li>
             <%= link_to "New Blog", new_post_path %>
@@ -29,15 +26,11 @@
         </ul>
 
         <ul class="nav navbar-nav pull-right">
-          <%= form_tag posts_path, method: :get do %>
-            <%= text_field_tag :query, @query %>
-            <%= submit_tag "Search" %>
-          <% end %>
           <!-- handles user Sign-In, Log-out and Sign-Up -->
           <% if user_signed_in? %>
             <li>
               <!-- if the user is already signed in display user first name at nav -->
-              Hello <%= current_user.first_name %>!
+              <%= link_to "Hello #{current_user.first_name}!", root_path %>
             </li>
 
             <li>
@@ -47,18 +40,37 @@
           <% else %>
             <!-- user is not logged-in need to log-in or sign-up -->
             <li>
-              <%= link_to "Log-in", new_session_path %>
+              <%= link_to "Sign-in", new_session_path %>
             </li>
             <li>
               <%= link_to "Sign-Up", new_user_path %>
             </li>
           <% end %> <!-- end of if-else statement -->
         </ul>
-      <!-- </div> -->
     </nav>
 
+    <!-- This will handle all flash notice instantiated by the controller process -->
     <div>
-      <%= yield %>
+      <% if flash[:notice] %>
+        <div class="alert alert-info" role="alert">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+      <% if flash[:alert] %>
+        <div class="alert alert-warning" role="alert">
+          <%= flash[:alert] %>
+        </div>
+      <% end %>
+
+      <!-- This section will display the side bar -->
+      <div class="container col-md-4 pull-right">
+        <%= render "/layouts/side_bar" %>
+      </div>
+
+      <!-- This section will display all blog post -->
+      <div class="container col-md-8 pull-left">
+        <%= yield %>
+      </div>
     </div>
 
   </body>

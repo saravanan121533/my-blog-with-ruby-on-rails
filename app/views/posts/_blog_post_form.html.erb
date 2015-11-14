@@ -1,31 +1,31 @@
 <%= form_for @post do |f| %>
-  <div class="container col-md-12">
-    <ul class="list-group">
-      <li class="list-group-item active">
-        <h4>Blog Info</h4>
-      </li>
+  <ul class="list-group">
+    <li class="list-group-item active">
+      <h4>Blog Info</h4>
+    </li>
 
-      <li class="list-group-item">
-        <%= f.label("Category") %>
+    <li class="list-group-item">
+      <div>
+
+      <%= f.label("Category") %>
         <!-- dropdown menu: @category_options is is generated at the controller
         where in it a array containing [title, id] and user input will be
         stored in the category_id -->
-        <%= f.select(:category_id, options_for_select(@category_options),
-             class: "dropdown-menu") %>
-      </li>
-
-      <li class="list-group-item">
+        <%= f.select(:category_id, options_for_select(@category_options, @post.category_id),
+        # [IMPROVEMENT] display nicely dropdown-menu and not very small display
+             class: "form-control dropdown-menu") %>
+      </div>
+      <div>
         <%= f.label(:title) %>
-        <%= f.text_field(:title) %>
-      </li>
+        <%= f.text_field(:title, class: "form-control") %>
+      </div>
 
-      <li class="list-group-item">
+      <div>
         <%= f.label(:body) %>
-        <%= f.cktext_area(:body, class: "form-control", size: "60x12") %>
-      </li>
-    </ul>
-  </div>
-  <div>
-    <%= f.submit({class: "btn btn-primary"}) %>
-  </div>
+        <%= f.cktext_area(:body, class: "form-control") %>
+      </div>
+
+      <%= f.submit({class: "btn btn-primary"}) %>
+    </li>
+  </ul>
 <% end %>

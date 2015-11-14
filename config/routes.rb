@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
 
-  root "home#home"
-  # root "posts#index"
+  # root "home#home"
+  root "posts#index"
   get "/about" => "home#about"
 
   # routes for blog posts and user comments on a blog post

@@ -17,6 +17,9 @@ class PostsController < ApplicationController
     # is defined in the post model
     @query    = params[:query]
     @posts = Post.order(updated_at: :desc).search(params[:query])
+
+    # for side_bar display of categories
+    @categories = Category.all
   end
 
   # this is the controller for the add new blog post found in nav bag
