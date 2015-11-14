@@ -2,6 +2,18 @@
   <h3>New Blog Post</h3>
 </div>
 
+<!-- Check if controller has a flash notice/alert and display it -->
+<% if flash[:notice] %>
+  <div class="alert alert-info" role="alert">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+<% if flash[:alert] %>
+  <div class="alert alert-warning" role="alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
 <!-- check if there are any errors to display -->
 <% if @post.errors.any? %>
   <div class="container alert alert-danger" role="alert">

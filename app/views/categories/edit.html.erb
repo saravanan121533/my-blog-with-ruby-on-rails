@@ -1,0 +1,17 @@
+<%= form_for @category do |f| %>
+  <div class="container col-md-12">
+    <ul class="list-group">
+      <li class="list-group-item active">
+        <h4>Edit Blog Category</h4>
+      </li>
+
+      <li class="list-group-item">
+        <%= f.label(:title) %>
+        <%= f.text_field(:title) %>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <%= f.submit({class: "btn btn-primary"}) %>
+  </div>
+<% end %>

@@ -1,3 +1,15 @@
+<!-- Check if controller has a flash notice/alert and display it -->
+<% if flash[:notice] %>
+  <div class="alert alert-info" role="alert">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+<% if flash[:alert] %>
+  <div class="alert alert-warning" role="alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
 <div class="container col-md-8">
   <ul class="list-group">
 
@@ -6,59 +18,11 @@
         <li class="list-group-item list-group-item-info">
           <h4><%= category.title.capitalize %></h4>
         </li>
-      <% end %>
+      <% end %> <!-- end of loop -->
+
     <% else %>
         <p>No category to display.</p>
     <% end %>
+
   </ul>
 </div>
-
-
-<!--
-
-
-    <li class="list-group-item list-group-item-info">
-      <h4>Blog Title One</h4>
-    </li>
-    <li class="list-group-item">
-      <p>
-
-      </p>
-    </li>
-
-  <ul class="list-group">
-    <li class="list-group-item list-group-item-warning">
-      <h4>Blog Title One</h4>
-    </li>
-    <li class="list-group-item">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
-      </p>
-    </li>
-  </ul>
-</div>
-
-<div class="container col-md-4">
-  <ul class="list-group">
-    <li class="list-group-item list-group-item-success">
-      <h4>Side Items here</h4>
-    </li>
-    <li class="list-group-item">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
-      </p>
-    </li>
-  </ul>
-</div> -->

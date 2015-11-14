@@ -13,6 +13,11 @@ class ApplicationController < ActionController::Base
   # end
   # helper_method :has_display_error?
 
+  def authenticate_user
+    # check if current user is signed in
+    redirect_to new_session_path, alert: "Please sign in!" unless user_signed_in?
+  end
+  
   # check if current_user exist in the sessions and assign it in the global
   # variable @current_user that will be used  in controller
   def current_user
@@ -26,11 +31,6 @@ class ApplicationController < ActionController::Base
     current_user.present?
   end
   helper_method :user_signed_in?
-
-  def authenticate_user
-    # check if current user is signed in
-    redirect_to new_session_path, alert: "Please sign in!" unless user_signed_in?
-  end
 
 
 end

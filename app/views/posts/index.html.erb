@@ -1,3 +1,15 @@
+<!-- Check if controller has a flash notice/alert and display it -->
+<% if flash[:notice] %>
+  <div class="alert alert-info" role="alert">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+<% if flash[:alert] %>
+  <div class="alert alert-warning" role="alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
 <!-- This page will display all blog post -->
 <div class="container col-md-11">
 

@@ -3,13 +3,13 @@ class PostsController < ApplicationController
   # authenticate user
   before_action(:authenticate_user, {except: [:index, :show]})
 
-  # this will add permission checking if user has the ability to perform actions
-  # see private method
-  # before_action(:authorize, {only: [:edit, :update, :destroy]})
-
   # get existing post base on :id, done before action controller method is performed
   before_action(:find_post, {only: [:edit, :update, :show, :destroy]})
 
+  # this will add permission checking if user has the ability to perform actions
+  # see private method
+  # note: always do this after params getting
+  before_action(:authorize, {only: [:edit, :update, :destroy]})
   # this is the controller for the index page which will show all the blog post
   def index
     @posts = Post.all.order(updated_at: :desc)

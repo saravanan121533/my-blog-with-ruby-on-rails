@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   # routes for user Sign-Up
   resources :users, only:[:new, :create]
 
-  # routes for user Log-in and Log-out
+  # routes for user Sign-in and Log-out
   resources :sessions, only: [:new, :create] do
     delete :destroy, on: :collection
   end

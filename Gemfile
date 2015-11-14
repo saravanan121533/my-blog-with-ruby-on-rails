@@ -21,7 +21,9 @@ gem "bootstrap-sass"
 gem 'bcrypt', '~> 3.1.7'
 # handling for permission
 gem 'cancancan', '~> 1.10'
-gem "rails-erd"
+
+# for fonts and icons
+gem "font-awesome-rails"
 
 ###### START WYSIWYG editor & related gems ######
 gem "ckeditor"
@@ -57,6 +59,22 @@ group :development, :test do
   gem "awesome_print"
   gem "interactive_editor"
   gem "hirb"
+
+  # generates visual model association to pdf file
+  # usage: rake erd
+  gem "rails-erd"
+
+  # this will be used for testing mailer feature
+  gem 'letter_opener'
+
+  # generates rails diagrams
+  # usage: rake diagram:all
+  gem 'railroady'
+
+  # tool for debugging
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-nav'
   ########## END Added Gems ##############
 end
 
