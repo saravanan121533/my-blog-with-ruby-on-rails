@@ -38,14 +38,18 @@
               <%= comment.updated_at.strftime("on %b %d, %Y") %>
             </span>
 
-            <%= link_to edit_post_comment_path(@post, comment) do %>
-              <i class="glyphicon glyphicon-edit"
-              aria-hidden="true" style="color: blue"></i>
+            <% if can? :edit, comment  %>
+              <%= link_to edit_post_comment_path(@post, comment) do %>
+                <i class="glyphicon glyphicon-edit"
+                aria-hidden="true" style="color: blue"></i>
+              <% end %>
             <% end %>
 
-            <%= link_to post_comment_path(@post, comment), method: :delete,
-            data: {confirm: "Are you use you want to delete this comment?"} do %>
-              <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
+            <% if can? :destroy, comment  %>
+              <%= link_to post_comment_path(@post, comment), method: :delete,
+              data: {confirm: "Are you use you want to delete this comment?"} do %>
+                <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
+              <% end %>
             <% end %>
           </div> <!-- end of icons container -->
 
