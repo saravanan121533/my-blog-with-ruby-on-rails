@@ -7,19 +7,51 @@ class Post < ActiveRecord::Base
   has_many :comments, dependent: :destroy
   belongs_to :user
   belongs_to :category
+  has_many :taggings
+  has_many :tags, through: :taggings, dependent: :destroy
 
   # method used for search form
   def self.search(term)
     if term
-      where(["LOWER(title) LIKE :search_term OR LOWER(body) LIKE :search_term",
-             {search_term: "%#{term}%"}])
+      # this will handle if no terms is found in tags table it will only
+      # search in posts table
+      begin
+        tag = Tag.find_by_name!(term)
+        where(["LOWER(title) LIKE :search_term OR LOWER(body) LIKE :search_term",
+               {search_term: "%#{term}%"}]) + tag.posts
+      rescue ActiveRecord::RecordNotFound => e
+        where(["LOWER(title) LIKE :search_term OR LOWER(body) LIKE :search_term",
+               {search_term: "%#{term}%"}])
+      end
+
+      # previous implementations
+      # this will error if term is not found in tags table, fixed using above implementation
+      # where(["LOWER(title) LIKE :search_term OR LOWER(body) LIKE :search_term",
+            #  {search_term: "%#{term}%"}]) + Tag.find_by_name!(term).posts
+      # this will return the tagging object and not the post object
+      # Tagging.joins(:post, :tag).where(["LOWER(posts.title) LIKE :search_term OR LOWER(posts.body) LIKE :search_term", {search_term: "%#{term}%"}])
+      # OK: Tagging.joins(:post, :tag).where("tags.name": "bacon")
     else
       all
     end
   end
 
-  def ten_items
-    order("created_at DESC").limit(10)
+  # The strip function is for removing whitespace
+  # This will be used during new/edit blog
+  def all_tags=(names)
+    self.tags = names.split(",").map do |name|
+        Tag.where(name: name.strip).first_or_create!
+    end
   end
+
+# This will be customized to render all the tags separated by commas.
+# This will be used during new/edit blog
+def all_tags
+  self.tags.map(&:name).join(", ")
+end
+
+  # def ten_items
+  #   order("created_at DESC").limit(10)
+  # end
 
 end

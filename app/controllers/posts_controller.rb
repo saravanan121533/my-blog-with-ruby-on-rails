@@ -13,11 +13,19 @@ class PostsController < ApplicationController
   before_action(:authorize, {only: [:edit, :update, :destroy]})
   # this is the controller for the index page which will show all the blog post
   def index
-    # the query will be used for the search functionality, the search method
-    # is defined in the post model
-    @query    = params[:query]
-    @posts = Post.order(updated_at: :desc).search(params[:query])
+    # binding.pry
+    if(params[:tag])
+      # this will handle the tag links search
+      posts = Post.order(updated_at: :desc).search(params[:tag])
+    else
+      # the query will be used for the search functionality, the search method
+      # is defined in the post model
+      @query    = params[:query]
+      posts = Post.order(updated_at: :desc).search(params[:query])
+    end
 
+    set = Set.new posts
+    @posts = set.to_a
     # for side_bar display of categories
     @categories = Category.all
   end
@@ -75,7 +83,8 @@ class PostsController < ApplicationController
 
   def post_params
     # this will "sanitize" the user input that will be permitted to the DB
-    params.require(:post).permit([:title, :body, :user_id, :category_id])
+    params.require(:post).permit([:title, :body, :user_id,
+                                  :category_id, :all_tags])
   end
 
   def find_post

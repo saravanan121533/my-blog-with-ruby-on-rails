@@ -46,6 +46,18 @@
         <% end %>
       <% end %>
     </div> <!-- end of icons container -->
+
+    <!-- display of tags and clickable and links to similar tags post -->
+    <!-- Tags: <%#=raw @post.all_tags %> -->
+    Tags: |
+    <% if @post.tags.any? %>
+        <% @post.tags.each do |t| %>
+        <%= link_to(tag_path(t.name), method: :get) do %>
+          <%= t.name %> |
+        <% end %>
+      <% end %>
+    <% end %>
+
   </li> <!-- end of header container -->
 
   <!-- Blog post content container -->

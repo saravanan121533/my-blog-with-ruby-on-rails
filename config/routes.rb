@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   root "posts#index"
   get "/about" => "home#about"
 
+  # for tags
+  get 'tags/:tag', to: 'posts#index', as: "tag"
+
   # routes for blog posts and user comments on a blog post
   resources :posts do
     resources :comments

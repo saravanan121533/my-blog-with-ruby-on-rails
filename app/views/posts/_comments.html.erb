@@ -28,14 +28,14 @@
   <ul class="list-group">
     <!-- Check if there are comment data to display -->
     <% if @post.comments.present? %>
-      <% @post.comments.each do |comment| %>
+      <% @post.comments.order(updated_at: :desc).each do |comment| %>
         <li class="list-group-item">
 
           <!-- This will display the action icons at container header -->
           <div id="action-icons">
             <span class="list-group-item-text">
               Posted By <%= comment.user.first_name %>
-              <%= comment.updated_at.strftime("on %b %d, %Y") %>
+              <%= comment.updated_at.strftime("on %b %d, %Y %I:%M %P") %>
             </span>
 
             <% if can? :edit, comment  %>

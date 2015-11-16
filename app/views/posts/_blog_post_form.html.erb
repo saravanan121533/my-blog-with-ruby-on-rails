@@ -1,4 +1,4 @@
-<%= form_for @post do |f| %>
+<%= form_for(@post, remote: true) do |f| %>
   <ul class="list-group">
     <li class="list-group-item active">
       <h4>Blog Info</h4>
@@ -11,10 +11,12 @@
         <!-- dropdown menu: @category_options is is generated at the controller
         where in it a array containing [title, id] and user input will be
         stored in the category_id -->
-        <%= f.select(:category_id, options_for_select(@category_options, @post.category_id),
+        <%= f.select(:category_id,
         # [IMPROVEMENT] display nicely dropdown-menu and not very small display
-             class: "form-control dropdown-menu") %>
+                     options_for_select(@category_options, @post.category_id),
+                    class: "form-control dropdown-menu") %>
       </div>
+
       <div>
         <%= f.label(:title) %>
         <%= f.text_field(:title, class: "form-control") %>
@@ -23,6 +25,12 @@
       <div>
         <%= f.label(:body) %>
         <%= f.cktext_area(:body, class: "form-control") %>
+      </div>
+
+      <div>
+        <%= f.label("Tags") %>
+        <%= f.text_field(:all_tags, class: "form-control",
+                         placeholder: "Tags separated with comma") %>
       </div>
 
       <%= f.submit({class: "btn btn-primary"}) %>
