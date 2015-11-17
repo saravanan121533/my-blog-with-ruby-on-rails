@@ -30,6 +30,7 @@ gem "ckeditor"
 # gem "paperclip"
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'jquery-turbolinks'
 # RMagick is an interface between Ruby and ImageMagick
 # gem 'rmagick', '~> 2.15', '>= 2.15.2'
 ###### END WYSIWYG editor & related gems ######

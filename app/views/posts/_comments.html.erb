@@ -1,17 +1,20 @@
 <!-- This is a form that enables user to post a comment for this specific blog post -->
-<ul class="list-group">
-  <li class="list-group-item list-group-item-info">
-    <h4>Post a Comment</h4>
-  </li>
-
-  <%= form_for [@post, @comment] do |f| %>
-    <li class="list-group-item">
-      <% f.label :body %>
-      <%= f.text_area :body, class: "form-control"%>
-      <%= f.submit class: "btn btn-primary" %>
+<!-- First need to check if the user can post a comment or not, e.g. user is not logged in -->
+<% if user_signed_in?  %>
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-info">
+      <h4>Post a Comment</h4>
     </li>
-  <% end %>
-</ul>
+
+    <%= form_for [@post, @comment] do |f| %>
+      <li class="list-group-item">
+        <% f.label :body %>
+        <%= f.text_area :body, class: "form-control"%>
+        <%= f.submit class: "btn btn-primary" %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
 
 <!-- All previous comments will be posted in the right side bar -->
 <div class="panel panel-primary">

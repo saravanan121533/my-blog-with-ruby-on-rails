@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
   def new
     # this will be initiated when a user Log-in and calls users/new.html.erb
+    @user = User.new
   end
 
   def create

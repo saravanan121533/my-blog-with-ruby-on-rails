@@ -1,6 +1,10 @@
 class CommentsController < ApplicationController
 
+  before_action(:authenticate_user, {except: [:index, :show]})
+
   before_action(:find_comment, {only: [:edit, :update, :destroy, :show]})
+
+  before_action(:authorize, {only: [:edit, :update, :destroy]})
 
   def create
     @post = Post.find params[:post_id]
@@ -64,5 +68,9 @@ class CommentsController < ApplicationController
 
   def comment_params
     comment_params = params.require(:comment).permit(:body)
+  end
+
+  def authorize
+    redirect_to root_path, alert: "Access denied!" unless can? :manage, @comment
   end
 end
