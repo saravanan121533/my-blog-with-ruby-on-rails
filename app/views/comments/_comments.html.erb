@@ -1,0 +1,72 @@
+<!-- This is a form that enables user to post a comment for this specific blog post -->
+<!-- First need to check if the user can post a comment or not, e.g. user is not logged in -->
+<% if user_signed_in?  %>
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-info">
+      <h4>Post a Comment</h4>
+    </li>
+
+    <%= form_for [@post, @comment] do |f| %>
+      <li class="list-group-item">
+        <% f.label :body %>
+        <%= f.text_area :body, class: "form-control"%>
+        <%= f.submit class: "btn btn-primary" %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<!-- All previous comments will be posted in the right side bar -->
+<div class="panel panel-primary">
+  <!-- This is the heading of the right side bar -->
+  <div class="panel-heading">
+    Comments
+    <% if @post.comments.count != 0 %>
+      <!-- This will display a badge on how many comments are posted -->
+      <span class="badge pull-right"><%= @post.comments.count %></span>
+    <% end %>
+  </div>
+
+  <!-- This will iterate all the comments for this specific post and display it -->
+  <ul class="list-group">
+    <!-- Check if there are comment data to display -->
+    <% if @post.comments.present? %>
+      <% @post.comments.order(updated_at: :desc).each do |comment| %>
+        <li class="list-group-item">
+
+          <!-- This will display the action icons at container header -->
+          <div id="action-icons">
+            <span class="list-group-item-text">
+              Posted By <%= comment.user.first_name %>
+              <%= comment.updated_at.strftime("on %b %d, %Y %I:%M %P") %>
+            </span>
+
+            <% if can? :edit, comment  %>
+              <%= link_to edit_post_comment_path(@post, comment) do %>
+                <i class="glyphicon glyphicon-edit"
+                aria-hidden="true" style="color: blue"></i>
+              <% end %>
+            <% end %>
+
+            <% if can? :destroy, comment  %>
+              <%= link_to post_comment_path(@post, comment), method: :delete,
+              data: {confirm: "Are you use you want to delete this comment?"} do %>
+                <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
+              <% end %>
+            <% end %>
+          </div> <!-- end of icons container -->
+
+          <%#= link_to post_comment_path(@post, comment) do %>
+            <!-- keyword raw will make it enable to post a music video format -->
+            <%= raw comment.body %>
+          <%# end %>
+        </li>
+      <% end %>
+    <% else %>
+      <!-- There are no existing comments to display for this post -->
+      <li class="list-group-item">
+          No comment to display.
+      </li>
+    <% end %>
+  </ul>
+</div>

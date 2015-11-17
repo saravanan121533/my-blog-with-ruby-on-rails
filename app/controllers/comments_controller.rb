@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
     @post = Post.find params[:post_id]
 
     # associates the post with the user
-    @post.user_id = current_user
+    # @post.user_id = current_user
 
     # [IMPROVE] check if there's a need to create global variable here
     comment_params = params.require(:comment).permit(:body)
