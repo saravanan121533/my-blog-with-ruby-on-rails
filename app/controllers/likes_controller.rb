@@ -7,6 +7,7 @@ class LikesController < ApplicationController
     like.post     = post
     like.user     = current_user
     if like.save
+      LikesMailer.notify_blog_owner(like).deliver_later
       redirect_to(post_path(post), notice: "Thanks for liking!")
     else
       redirect_to(post_path(post), alert: "Can't like! Liked already?")

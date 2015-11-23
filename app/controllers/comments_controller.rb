@@ -26,7 +26,7 @@ class CommentsController < ApplicationController
     # check if successful db query
     if @comment.save
       # this is for mailer trigger, that a new comment is created
-      BlogMailer.notify_blog_owner(@comment).deliver_now
+      BlogMailer.notify_blog_owner(@comment).deliver_later
       redirect_to post_path(@post), notice: "Comment created successfully!"
     else
       render "posts/show"

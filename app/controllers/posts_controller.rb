@@ -13,6 +13,7 @@ class PostsController < ApplicationController
   before_action(:authorize, {only: [:edit, :update, :destroy]})
   # this is the controller for the index page which will show all the blog post
   def index
+    PostCleanupJob.perform_later
     if(params[:tag])
       # this will handle the tag links search
       posts = Post.order(updated_at: :desc).search(params[:tag])

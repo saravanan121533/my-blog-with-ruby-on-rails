@@ -25,4 +25,6 @@ Rails.application.routes.draw do
 
   # routes for category
   resources :categories
+
+  match "/delayed_job" => DelayedJobWeb, :anchor => false, via: [:get, :post]
 end

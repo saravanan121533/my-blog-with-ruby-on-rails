@@ -23,6 +23,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'cancancan', '~> 1.10'
 # handling delaying mailer job
 gem 'delayed_job_active_record'
+gem "delayed_job_web"
 
 # for fonts and icons
 gem "font-awesome-rails"
