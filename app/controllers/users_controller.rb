@@ -13,6 +13,7 @@ class UsersController < ApplicationController
     # check if successful db query or not
     if @user.save
       # successful user registration
+      session[:user_id] = @user.id
       redirect_to root_path, notice: "account created!"
     else
       render :new

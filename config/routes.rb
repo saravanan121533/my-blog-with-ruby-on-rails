@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   # routes for blog posts and user comments on a blog post
   resources :posts do
     resources :comments
+    resources :likes, only: [:create, :destroy]
+    resources :favourites, only: [:create, :destroy]
   end
 
   # routes for user Sign-Up

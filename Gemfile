@@ -21,6 +21,8 @@ gem "bootstrap-sass"
 gem 'bcrypt', '~> 3.1.7'
 # handling for permission
 gem 'cancancan', '~> 1.10'
+# handling delaying mailer job
+gem 'delayed_job_active_record'
 
 # for fonts and icons
 gem "font-awesome-rails"
@@ -28,8 +30,12 @@ gem "font-awesome-rails"
 ###### START WYSIWYG editor & related gems ######
 gem "ckeditor"
 # gem "paperclip"
+# gem for uploading files
 gem 'carrierwave'
+# gem for resizing images
 gem 'mini_magick'
+# this will be use for setting up to the S3
+gem 'fog'
 gem 'jquery-turbolinks'
 # RMagick is an interface between Ruby and ImageMagick
 # gem 'rmagick', '~> 2.15', '>= 2.15.2'
