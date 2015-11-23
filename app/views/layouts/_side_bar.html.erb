@@ -39,3 +39,30 @@
     <% end %>
   </ul>
 </div>
+
+<!-- User favourites display in the side bar -->
+<% if user_signed_in? %>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      User Favourites
+    </div>
+
+    <ul class="list-group">
+      <% if @favourites.present? %>
+        <% @favourites.each do |fave| %>
+          <li class="list-group-item">
+            <p>
+              <%= link_to post_path(fave.post) do %>
+                <%= fave.post.title %>
+              <% end %>
+            </p>
+          </li>
+
+        <% end %> <!-- end of loop -->
+
+      <% else %>
+          <p>No user favourites to display.</p>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

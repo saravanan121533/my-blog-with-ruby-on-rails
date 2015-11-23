@@ -7,8 +7,13 @@ class Post < ActiveRecord::Base
   has_many :comments, dependent: :destroy
   belongs_to :user
   belongs_to :category
+
   has_many :taggings
   has_many :tags, through: :taggings, dependent: :destroy
+
+  has_many :favourites, dependent: :destroy
+  has_many :favouriting_users, through: :favourites, source: :user
+
 
   # method used for search form
   def self.search(term)
@@ -44,14 +49,18 @@ class Post < ActiveRecord::Base
     end
   end
 
-# This will be customized to render all the tags separated by commas.
-# This will be used during new/edit blog
-def all_tags
-  self.tags.map(&:name).join(", ")
-end
+  # This will be customized to render all the tags separated by commas.
+  # This will be used during new/edit blog
+  def all_tags
+    self.tags.map(&:name).join(", ")
+  end
 
-  # def ten_items
-  #   order("created_at DESC").limit(10)
-  # end
+  def favourited_by?(user)
+    favourite_for(user).present?
+  end
+
+  def favourite_for(user)
+    favourites.find_by_user_id user.id
+  end
 
 end

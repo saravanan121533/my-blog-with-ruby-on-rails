@@ -13,7 +13,6 @@ class PostsController < ApplicationController
   before_action(:authorize, {only: [:edit, :update, :destroy]})
   # this is the controller for the index page which will show all the blog post
   def index
-    # binding.pry
     if(params[:tag])
       # this will handle the tag links search
       posts = Post.order(updated_at: :desc).search(params[:tag])
@@ -24,10 +23,12 @@ class PostsController < ApplicationController
       posts = Post.order(updated_at: :desc).search(params[:query])
     end
 
-    set = Set.new posts
+    set = Set.new(posts)
     @posts = set.to_a
-    # for side_bar display of categories
+
+    # for side_bar display variables
     @categories = Category.all
+    @favourites = Favourite.where(user: current_user)
   end
 
   # this is the controller for the add new blog post found in nav bag
@@ -77,6 +78,8 @@ class PostsController < ApplicationController
 
   def show
     @comment = Comment.new
+    # for side_bar display variables
+    @favourites = Favourite.where(user: current_user)
   end
 
   private
