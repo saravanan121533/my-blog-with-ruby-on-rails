@@ -14,6 +14,9 @@ class Post < ActiveRecord::Base
   has_many :favourites, dependent: :destroy
   has_many :favouriting_users, through: :favourites, source: :user
 
+  has_many :likes, dependent: :destroy
+  has_many :liking_users, through: :likes, source: :user
+
 
   # method used for search form
   def self.search(term)
@@ -61,6 +64,14 @@ class Post < ActiveRecord::Base
 
   def favourite_for(user)
     favourites.find_by_user_id user.id
+  end
+
+  def liked_by?(user)
+    like_for(user).present?
+  end
+
+  def like_for(user)
+    likes.find_by_user_id(user.id)
   end
 
 end
