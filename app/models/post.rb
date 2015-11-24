@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
   # validation for post model
   validates :title, presence: true, uniqueness: true
-  validates :body, presence: true, uniqueness: true
+  validates :body, presence: true
 
   # model associations
   has_many :comments, dependent: :destroy

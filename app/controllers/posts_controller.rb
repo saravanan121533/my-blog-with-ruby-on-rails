@@ -36,16 +36,18 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
     @category_options = Category.all.map{|u| [u.title, u.id]}
+    # @category_options = Category.all
   end
 
   # this is the post method for the add new blog post after user clicked
   # "Create Post" button
   def create
+    @category_options = Category.all.map{|u| [u.title, u.id]}
     @post = Post.new(post_params)
     @post.user_id = current_user.id
-
     if @post.save
       redirect_to posts_path
+      # redirect_to post_path(@post)
     else
       render :new
     end
