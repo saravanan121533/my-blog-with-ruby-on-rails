@@ -11,57 +11,72 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <!-- <div class="container-fluid"> -->
         <ul class="nav navbar-nav pull-left">
           <li>
-            <%= link_to "Home", root_path %>
-          </li>
-          <li>
-            <%= link_to "New Blog", new_post_path %>
-          </li>
-          <li>
-            <%= link_to "About", about_path %>
+            <%= link_to root_path do %>
+              <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
+            <% end %>
           </li>
         </ul>
 
         <ul class="nav navbar-nav pull-right">
+          <li class="navbar-form navbar-left">
+            <%= form_tag posts_path, method: :get do %>
+              <%= text_field_tag(:query, @query, class: "form-control", placeholder: "Search...") %>
+              <%= button_tag  name: nil, class: "btn btn-default", type: "submit", id: "search" do %>
+               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              <% end %>
+            <% end %>
+          </li>
           <!-- handles user Sign-In, Log-out and Sign-Up -->
           <% if user_signed_in? %>
-            <li>
+            <li class="dropdown">
               <!-- if the user is already signed in display user first name at nav -->
-              <%= link_to "Hello #{current_user.first_name}!", root_path %>
+              <!-- <%#= link_to "Hello #{current_user.first_name}!", root_path %> -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 data-target="menu"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                 Hello <%= current_user.first_name %>!
+                 <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" id="menu">
+                <li><%= link_to "New Blog", new_post_path %></li>
+                <li><%= link_to "About", about_path %></li>
+                <li><%= link_to "Sign Out", sessions_path, method: :delete %></li>
+              </ul>
             </li>
 
-            <li>
-              <!-- also, if user is signed in display log-out button   -->
-              <%= link_to "Log-out", sessions_path, method: :delete %>
-            </li>
           <% else %>
-            <!-- user is not logged-in need to log-in or sign-up -->
-            <li>
-              <%= link_to "Sign-in", new_session_path %>
-            </li>
-            <li>
-              <%= link_to "Sign-Up", new_user_path %>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                 Get Started<span class="caret"></span>
+               </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Sign In", new_session_path %></li>
+                <li><%= link_to "Sign Up", new_user_path %></li>
+                <li><%= link_to "About", about_path %></li>
+              </ul>
             </li>
           <% end %> <!-- end of if-else statement -->
         </ul>
     </nav>
 
-    <!-- This will handle all flash notice instantiated by the controller process -->
-    <% if flash[:notice] %>
-      <div class="alert alert-success" role="alert">
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
-    <% if flash[:alert] %>
-      <div class="alert alert-warning" role="alert">
-        <%= flash[:alert] %>
-      </div>
-    <% end %>
+    <div class="container">
+      <!-- This will handle all flash notice instantiated by the controller process -->
+      <% if flash[:notice] %>
+        <div class="alert alert-success" role="alert">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+      <% if flash[:alert] %>
+        <div class="alert alert-warning" role="alert">
+          <%= flash[:alert] %>
+        </div>
+      <% end %>
 
-    <div>
       <!-- This section will display the side bar -->
       <div class="container col-md-4 pull-right">
         <%= render "/layouts/side_bar" %>

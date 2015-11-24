@@ -1,7 +1,7 @@
 <!-- This is a form that enables user to post a comment for this specific blog post -->
 <!-- First need to check if the user can post a comment or not, e.g. user is not logged in -->
 <% if user_signed_in?  %>
-  <ul class="list-group">
+  <ul class="list-group" id="post-comment">
     <li class="list-group-item list-group-item-info">
       <h4>Post a Comment</h4>
     </li>
@@ -17,7 +17,7 @@
 <% end %>
 
 <!-- All previous comments will be posted in the right side bar -->
-<div class="panel panel-primary">
+<div class="panel panel-default" id="comment-list">
   <!-- This is the heading of the right side bar -->
   <div class="panel-heading">
     Comments

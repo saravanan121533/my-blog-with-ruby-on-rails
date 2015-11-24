@@ -16,3 +16,64 @@
 h3 {
   margin-top: 0;
 }
+
+body {
+  padding-top: 70px;
+}
+
+.glyphicon-blackboard {
+  font-size: 1.5em;
+}
+
+.navbar-default {
+  background-color: #6b031a;
+  border-color: #6b031a;
+}
+
+.navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+}
+
+.list-group-item-info {
+  background-color: #A1C433;
+  color: gray;
+}
+
+.list-group-item-info a,
+.list-group-item-info h3,
+.list-group-item-info h4,
+#action-icons {
+  color: rgba(70, 62, 71, 0.93);
+}
+
+#category-list.panel > .panel-heading {
+  background-color: #0095CD;
+  color: white;
+}
+
+#favourites_list.panel > .panel-heading {
+  background-color: #DE5E22;
+  color: white;
+}
+
+.list-group-item.active {
+  background-color: #A1C433;
+  border-color: #A1C433;
+  color: rgba(70, 62, 71, 0.93);
+}
+
+.btn.btn-primary {
+  background-color: #0095CD;
+  border-color: #0095CD;
+  color: white;
+}
+
+#post-comment.list-group > .list-group-item-info {
+  background-color: #ebcf3e;
+  border-color: #ebcf3e;
+}
+
+#comment-list.panel > .panel-heading {
+  background-color: #ebcf3e;
+  border-color: #ebcf3e;
+}

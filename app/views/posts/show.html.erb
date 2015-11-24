@@ -1,13 +1,13 @@
 <!-- Post Error handling -->
 <% if @post.errors.any? %>
-  <div class="container alert alert-danger" role="alert">
+  <div class="alert alert-danger" role="alert">
     <%= @post.errors.full_messages.join(", ") %>
   </div>
 <% end %>
 
 <!-- Comments Error handling -->
 <% if @comment.errors.any? %>
-  <div class="container alert alert-danger" role="alert">
+  <div class="alert alert-danger" role="alert">
     <%= @comment.errors.full_messages.join(", ") %>
   </div>
 <% end %>
@@ -46,6 +46,7 @@
       <% end %>
 
       <!-- favourite post -->
+      <br>
       <% if user_signed_in? %>
         <% if @post.favourited_by?(current_user) %>
           <%= link_to [@post, @post.favourite_for(current_user)], method: :delete do %>
@@ -75,18 +76,22 @@
       <% end %>
       Liked:  <%= pluralize(@post.likes.count, "time") %>
 
+      <!-- display of tags and clickable and links to similar tags post -->
+      <!-- Tags: <%#=raw @post.all_tags %> -->
+      <br>
+      <% if @post.tags.any? %>
+        Tags: |
+        <% @post.tags.each do |t| %>
+          <%= link_to(tag_path(t.name), method: :get) do %>
+            <%= t.name %> |
+          <% end %>
+        <% end %>
+
+      <% else %>
+        Tags: none
+      <% end %>
     </div> <!-- end of icons container -->
 
-    <!-- display of tags and clickable and links to similar tags post -->
-    <!-- Tags: <%#=raw @post.all_tags %> -->
-    Tags: |
-    <% if @post.tags.any? %>
-        <% @post.tags.each do |t| %>
-        <%= link_to(tag_path(t.name), method: :get) do %>
-          <%= t.name %> |
-        <% end %>
-      <% end %>
-    <% end %>
 
   </li> <!-- end of header container -->
 

@@ -1,7 +1,7 @@
 <h3>Edit Blog Post</h3>
 
 <% if @post.errors.any? %>
-  <div class="container alert alert-danger" role="alert">
+  <div class="alert alert-danger" role="alert">
     <%= @post.errors.full_messages.join(", ") %>
   </div>
 <% end %>

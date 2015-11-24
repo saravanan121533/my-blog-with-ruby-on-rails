@@ -2,7 +2,7 @@
 
 <!-- check if there are any errors to display -->
 <% if @post.errors.any? %>
-  <div class="container alert alert-danger" role="alert">
+  <div class="alert alert-danger" role="alert">
     <%= @post.errors.full_messages.join(", ") %>
   </div>
 <% end %>

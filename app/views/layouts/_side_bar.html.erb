@@ -1,17 +1,4 @@
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    Search Blog
-  </div>
-
-  <div class="panel-body">
-    <%= form_tag posts_path, method: :get, class: "navbar-form navbar-left" do %>
-      <%= text_field_tag(:query, @query, class: "form-control", placeholder: "Search") %>
-      <%= submit_tag("Submit", class: "btn btn-primary", id: "search") %>
-    <% end %>
-  </div>
-</div>
-
-<div class="panel panel-primary">
+<div class="panel panel-default" id="category-list">
   <!-- This is the heading of the right side bar -->
   <div class="panel-heading">
     Categories
@@ -42,7 +29,7 @@
 
 <!-- User favourites display in the side bar -->
 <% if user_signed_in? %>
-  <div class="panel panel-primary">
+  <div class="panel panel-default" id="favourites_list">
     <div class="panel-heading">
       User Favourites
     </div>
@@ -51,17 +38,19 @@
       <% if @favourites.present? %>
         <% @favourites.each do |fave| %>
           <li class="list-group-item">
-            <p>
+            <h5>
               <%= link_to post_path(fave.post) do %>
                 <%= fave.post.title %>
               <% end %>
-            </p>
+            </h5>
           </li>
 
         <% end %> <!-- end of loop -->
 
       <% else %>
-          <p>No user favourites to display.</p>
+        <li class="list-group-item">
+          <h5>No user favourites to display.</h5>
+        </li>
       <% end %>
     </ul>
   </div>
