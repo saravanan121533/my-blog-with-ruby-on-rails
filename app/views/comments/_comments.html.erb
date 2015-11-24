@@ -33,14 +33,13 @@
     <% if @post.comments.present? %>
       <% @post.comments.order(updated_at: :desc).each do |comment| %>
         <li class="list-group-item">
-
-          <!-- This will display the action icons at container header -->
           <div id="action-icons">
             <span class="list-group-item-text">
               Posted By <%= comment.user.first_name %>
               <%= comment.updated_at.strftime("on %b %d, %Y %I:%M %P") %>
             </span>
 
+          <!-- This will display the action icons at container header -->
             <% if can? :edit, comment  %>
               <%= link_to edit_post_comment_path(@post, comment) do %>
                 <i class="glyphicon glyphicon-edit"
@@ -56,16 +55,15 @@
             <% end %>
           </div> <!-- end of icons container -->
 
-          <%#= link_to post_comment_path(@post, comment) do %>
-            <!-- keyword raw will make it enable to post a music video format -->
-            <%= raw comment.body %>
-          <%# end %>
+          <!-- keyword raw will make it enable to post a music video format -->
+          <h5><%= raw comment.body %></h5>
+
         </li>
       <% end %>
     <% else %>
       <!-- There are no existing comments to display for this post -->
       <li class="list-group-item">
-          No comment to display.
+          <h5>No comment to display.</h5>
       </li>
     <% end %>
   </ul>

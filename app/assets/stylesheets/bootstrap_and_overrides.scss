@@ -26,8 +26,8 @@ body {
 }
 
 .navbar-default {
-  background-color: #6b031a;
-  border-color: #6b031a;
+  background-color: #414141;
+  border-color: #414141;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -35,7 +35,7 @@ body {
 }
 
 .list-group-item-info {
-  background-color: #A1C433;
+  background-color: rgba(#dfaf08, 0.96);
   color: gray;
 }
 
@@ -46,34 +46,20 @@ body {
   color: rgba(70, 62, 71, 0.93);
 }
 
-#category-list.panel > .panel-heading {
-  background-color: #0095CD;
+.panel > .panel-heading {
+  background-color: #414141;
   color: white;
-}
-
-#favourites_list.panel > .panel-heading {
-  background-color: #DE5E22;
-  color: white;
-}
-
-.list-group-item.active {
-  background-color: #A1C433;
-  border-color: #A1C433;
-  color: rgba(70, 62, 71, 0.93);
 }
 
 .btn.btn-primary {
-  background-color: #0095CD;
-  border-color: #0095CD;
+  background-color: #ac8e60;
+  border-color: #AC7F60;
   color: white;
 }
 
-#post-comment.list-group > .list-group-item-info {
-  background-color: #ebcf3e;
-  border-color: #ebcf3e;
-}
-
+#post-comment.list-group > .list-group-item-info,
 #comment-list.panel > .panel-heading {
-  background-color: #ebcf3e;
-  border-color: #ebcf3e;
+  background-color: #F7C800;
+  border-color: #F7C800;
+  color: rgba(70, 62, 71, 0.93);
 }
