@@ -10,9 +10,10 @@
       <%= f.label("Category") %>
         <!-- dropdown menu: @category_options is is generated at the controller
         where in it a array containing [title, id] and user input will be
-        stored in the category_id -->
+        stored in the category_id
+        [IMPROVEMENT] display nicely dropdown-menu and not very small display
+        -->
         <%= f.select(:category_id,
-        # [IMPROVEMENT] display nicely dropdown-menu and not very small display
                      options_for_select(@category_options, @post.category_id),
                     class: "form-control dropdown-menu") %>
       </div>
@@ -24,8 +25,8 @@
 
       <div>
         <%= f.label(:body) %>
-        <%#= f.cktext_area(:body, class: "form-control") %>
-        <%= f.text_area(:body, class: "form-control") %>
+        <%= f.cktext_area(:body, class: "form-control") %>
+        <%#= f.text_area(:body, class: "form-control") %>
       </div>
 
       <div>
