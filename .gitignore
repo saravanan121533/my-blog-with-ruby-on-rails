@@ -12,3 +12,4 @@
 !/log/.keep
 /tmp
 /config/initializers/app_keys.rb
+public/uploads/

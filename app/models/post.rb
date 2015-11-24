@@ -1,7 +1,9 @@
 class Post < ActiveRecord::Base
   # validation for post model
-  validates :title, presence: true, uniqueness: true
-  validates :body, presence: true
+  validates(:title, {presence: true,
+                    uniqueness: {message: "Title is already in use."},
+                    length: {minimum: 3}})
+  validates(:body, {presence: true})
 
   # model associations
   has_many :comments, dependent: :destroy
@@ -17,6 +19,7 @@ class Post < ActiveRecord::Base
   has_many :likes, dependent: :destroy
   has_many :liking_users, through: :likes, source: :user
 
+  # mount_uploader :image, ImageUploader
 
   # method used for search form
   def self.search(term)

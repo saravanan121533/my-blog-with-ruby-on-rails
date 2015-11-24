@@ -90,7 +90,7 @@ class PostsController < ApplicationController
   def post_params
     # this will "sanitize" the user input that will be permitted to the DB
     params.require(:post).permit([:title, :body, :user_id,
-                                  :category_id, :all_tags])
+                                  :category_id, :all_tags, :image])
   end
 
   def find_post
