@@ -68,6 +68,7 @@ group :development, :test do
   gem "awesome_print"
   gem "interactive_editor"
   gem "hirb"
+  gem "faker"
 
   # generates visual model association to pdf file
   # usage: rake erd

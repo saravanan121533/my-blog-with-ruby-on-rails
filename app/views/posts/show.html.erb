@@ -88,7 +88,7 @@
       <!-- Tags: <%#=raw @post.all_tags %> -->
       <br>
       <% if @post.tags.any? %>
-        Tags: |
+        <i class="fa fa-tags">|</i>
         <% @post.tags.each do |t| %>
           <%= link_to(tag_path(t.name), method: :get) do %>
             <%= t.name %> |
@@ -96,7 +96,7 @@
         <% end %>
 
       <% else %>
-        Tags: none
+        <i class="fa fa-tag">none</i>
       <% end %>
     </div> <!-- end of icons container -->
 

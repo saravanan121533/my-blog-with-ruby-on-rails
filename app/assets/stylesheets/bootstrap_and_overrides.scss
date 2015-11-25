@@ -18,20 +18,20 @@ h3 {
 }
 
 body {
-  padding-top: 70px;
-}
-
-.glyphicon-blackboard {
-  font-size: 1.5em;
+  padding-top: 100px;
 }
 
 .navbar-default {
-  background-color: #414141;
+  background-color: rgba(#414141, 0.9);
   border-color: #414141;
 }
 
 .navbar-default .navbar-nav > li > a {
    color: white; /*Change active text color here*/
+}
+
+.nav.navbar-nav.pull-right {
+  margin-top: 15px;
 }
 
 .list-group-item-info {
@@ -42,6 +42,7 @@ body {
 .list-group-item-info a,
 .list-group-item-info h3,
 .list-group-item-info h4,
+.list-group-item-info i,
 #action-icons {
   color: rgba(70, 62, 71, 0.93);
 }
@@ -62,4 +63,12 @@ body {
   background-color: #F7C800;
   border-color: #F7C800;
   color: rgba(70, 62, 71, 0.93);
+}
+
+#tux {
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #0d0c0c;
+  font-size: 2.5em;
 }
