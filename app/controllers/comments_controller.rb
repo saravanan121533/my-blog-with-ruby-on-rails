@@ -23,14 +23,19 @@ class CommentsController < ApplicationController
     # @comment.user_id = current_user.id # this will update user_id
     @comment.user = current_user
 
+    # ajaxifying comment
+    respond_to do |format|
     # check if successful db query
-    if @comment.save
-      # this is for mailer trigger, that a new comment is created
-      BlogMailer.notify_blog_owner(@comment).deliver_later
-      redirect_to post_path(@post), notice: "Comment created successfully!"
-    else
-      render "posts/show"
-    end
+      if @comment.save
+        # this is for mailer trigger, that a new comment is created
+        BlogMailer.notify_blog_owner(@comment).deliver_later
+        format.html { redirect_to post_path(@post), notice: "Comment created successfully!" }
+        format.js   { render :comment_success }
+      else
+        format.html { render "posts/show" }
+        format.js   { render js: "alert('failure');" }
+      end
+    end # end of ajax
   end # end of create action method
 
   def edit

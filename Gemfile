@@ -27,6 +27,8 @@ gem "delayed_job_web"
 
 # for fonts and icons
 gem "font-awesome-rails"
+# for simple form
+gem 'simple_form'
 
 ###### START WYSIWYG editor & related gems ######
 gem "ckeditor"

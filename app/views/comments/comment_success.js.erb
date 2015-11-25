@@ -1,0 +1,2 @@
+$("#comments").prepend("<%= j(render('/comments/comment_body', {comment: @comment})) %>");
+$("#comment_body").val("");
