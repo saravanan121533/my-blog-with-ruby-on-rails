@@ -1,0 +1,4 @@
+<%= link_to [post, post.like_for(current_user)], method: :delete, remote: true do %>
+  <i class="fa fa-thumbs-up" style="color: blue"></i>
+<% end %>
+<span class="badge"><%= pluralize(post.likes.count, "time") %></span>

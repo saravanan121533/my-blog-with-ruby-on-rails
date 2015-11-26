@@ -2,10 +2,10 @@ class FavouritesController < ApplicationController
   before_action :authenticate_user
 
   def create
-    fav          = current_user.favourites.new
-    post     = Post.find params[:post_id]
-
+    fav  = current_user.favourites.new
+    post = Post.find params[:post_id]
     fav.post = post
+    
     if fav.save
       redirect_to post_path(post), notice: "Blog Post Favourited!"
     else

@@ -33,7 +33,7 @@ class CommentsController < ApplicationController
         format.js   { render :comment_success }
       else
         format.html { render "posts/show" }
-        format.js   { render js: "alert('failure');" }
+        format.js   { render }
       end
     end # end of ajax
   end # end of create action method

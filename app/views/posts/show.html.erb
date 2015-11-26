@@ -66,23 +66,17 @@
       <!-- Favourited: <%#= pluralize(@post.favourites.count, "time") %> -->
 
       <!-- like post -->
-      <span>
-      <% if user_signed_in? %>
-        <% if @post.liked_by?(current_user)%>
-          <%= link_to [@post, @post.like_for(current_user)], method: :delete do %>
-            <i class="fa fa-thumbs-up" style="color: blue"></i>
+      <span id="<%= dom_id(@post, :like) %>">
+        <% if user_signed_in? %>
+          <% if @post.liked_by?(current_user)%>
+            <%= render "likes/unlike_link", post: @post %>
+          <% else %>
+            <%= render "likes/like_link", post: @post %>
           <% end %>
-
         <% else %>
-          <%= link_to post_likes_path(@post), method: :post do %>
-            <i class="fa fa-thumbs-o-up" style="color: gray"></i>
-          <% end %>
+          <i class="fa fa-thumbs-up" style="color: blue"></i>
         <% end %>
-      <% else %>
-        <i class="fa fa-thumbs-up" style="color: blue"></i>
-      <% end %>
       </span>
-      <span class="badge"><%= pluralize(@post.likes.count, "time") %></span>
 
       <!-- display of tags and clickable and links to similar tags post -->
       <!-- Tags: <%#=raw @post.all_tags %> -->
