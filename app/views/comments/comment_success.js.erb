@@ -1,2 +1,6 @@
 $("#comments").prepend("<%= j(render('/comments/comment_body', {comment: @comment})) %>");
 $("#comment_body").val("");
+$("#comment-header h4").replaceWith("<%= j(render('/comments/comments_header')) %>");
+
+<% @comment = Comment.new %>
+$("#new_comment").replaceWith("<%= j render 'comment_form' %>");

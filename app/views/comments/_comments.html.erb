@@ -5,40 +5,30 @@
     <li class="list-group-item list-group-item-info">
       <h4>Post a Comment</h4>
     </li>
-
     <%= render "/comments/comment_form" %>
   </ul>
 <% end %>
 
-<!-- All previous comments will be posted in the right side bar -->
-<div class="panel panel-default" id="comment-list">
-  <!-- This is the heading of the right side bar -->
-  <div class="panel-heading">
-    Comments
-    <% if @post.comments.count != 0 %>
-      <!-- This will display a badge on how many comments are posted -->
-      <span class="badge pull-right"><%= @post.comments.count %></span>
-    <% end %>
+<!-- Display for previous comments -->
+<div class="panel panel-default">
+  <!-- comments header -->
+  <div class="panel-heading" id="comment-header">
+    <%= render "comments/comments_header" %>
   </div>
 
   <!-- This will iterate all the comments for this specific post and display it -->
-  <ul class="list-group">
+  <div class="list-group-item">
     <!-- Check if there are comment data to display -->
     <% if @post.comments.present? %>
       <% @post.comments.order(updated_at: :desc).each do |comment| %>
-
-        <li class="list-group-item" id="comments">
-          <!-- <div id="comments"> -->
-            <%= render "/comments/comment_body", comment: comment %>
-          <!-- </div> -->
-        </li>
-
+        <div id="comments">
+          <%= render "/comments/comment_body", comment: comment %>
+        </div>
       <% end %>
     <% else %>
       <!-- There are no existing comments to display for this post -->
-      <li class="list-group-item">
+      <div class="list-group-item">
           <h5>No comment to display.</h5>
-      </li>
+      </div>
     <% end %>
-  </ul>
-</div>
+  </div>

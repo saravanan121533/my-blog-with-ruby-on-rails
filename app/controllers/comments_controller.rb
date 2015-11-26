@@ -53,13 +53,18 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    # calls before action callback find_comment
-    if @comment.destroy
-      flash[:notice] = "Comment deleted successfully."
-      redirect_to post_path(params[:post_id])
-    else
-      flash[:alert] = "Error in comment delete."
-      redirect_to post_path(params[:post_id])
+    # ajaxifying comment
+    respond_to do |format|
+      # calls before action callback find_comment
+      if @comment.destroy
+        # flash[:notice] = "Comment deleted successfully."
+        format.html { redirect_to post_path(params[:post_id]) }
+        format.js   { render }
+      else
+        flash[:alert] = "Error in comment delete."
+        format.html { redirect_to post_path(params[:post_id]) }
+        format.js   { render }
+      end
     end
   end
 

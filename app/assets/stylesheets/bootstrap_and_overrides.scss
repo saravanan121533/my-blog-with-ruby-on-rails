@@ -43,7 +43,7 @@ body {
 .list-group-item-info h3,
 .list-group-item-info h4,
 .list-group-item-info i,
-#action-icons {
+#comment-header {
   color: rgba(70, 62, 71, 0.93);
 }
 
@@ -59,16 +59,25 @@ body {
 }
 
 #post-comment.list-group > .list-group-item-info,
-#comment-list.panel > .panel-heading {
+#comment-header.panel-heading {
   background-color: #F7C800;
   border-color: #F7C800;
   color: rgba(70, 62, 71, 0.93);
 }
 
+// temp used for awsome font icon for tux
 #tux {
   background-color: white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   color: #0d0c0c;
   font-size: 2.5em;
+}
+
+.tux-logo {
+  background: image-url('tux.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  height: 50px;
+  width: 50px;
 }
