@@ -47,16 +47,13 @@
 
       <!-- favourite post -->
       <br>
-      <span>
+      <!-- <span id="<%#= dom_id(@post, :favourite) %>"> -->
+      <span id="favourite">
       <% if user_signed_in? %>
         <% if @post.favourited_by?(current_user) %>
-          <%= link_to [@post, @post.favourite_for(current_user)], method: :delete do %>
-            <i class="glyphicon glyphicon-star" aria-hidden="true" style="color: yellow"></i>
-          <% end %>
+            <%= render "favourites/unfavourite_link", post: @post %>
         <% else %>
-          <%= link_to post_favourites_path(@post), method: :post do %>
-            <i class="glyphicon glyphicon-star-empty" aria-hidden="true" style="color: gray"></i>
-          <% end %>
+            <%= render "favourites/favourite_link", post: @post %>
         <% end %>
       <% else %>
         <i class="glyphicon glyphicon-star" aria-hidden="true" style="color: yellow"></i>

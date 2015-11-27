@@ -59,7 +59,7 @@ class CommentsController < ApplicationController
       if @comment.destroy
         # flash[:notice] = "Comment deleted successfully."
         format.html { redirect_to post_path(params[:post_id]) }
-        format.js   { render }
+        format.js   { render :delete_comment }
       else
         flash[:alert] = "Error in comment delete."
         format.html { redirect_to post_path(params[:post_id]) }

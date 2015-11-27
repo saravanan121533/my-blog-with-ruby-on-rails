@@ -1,0 +1,2 @@
+$("#comments").fadeOut(1000, function(){ $(this).remove() });
+$("#comment-header h4").replaceWith("<%= j(render('/comments/comments_header')) %>");
