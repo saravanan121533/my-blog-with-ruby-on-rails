@@ -1,4 +1,9 @@
-$("#comments").prepend("<%= j(render('/comments/comment_body', {comment: @comment})) %>");
+if(document.getElementById('comments')) {
+  $("#comments").prepend("<%= j(render('/comments/comment_body', {comment: @comment})) %>");
+} else {
+  $("#no-comments").replaceWith("<div id=" + "comments" + ">" + "<%= j(render('/comments/comment_body', {comment: @comment})) %>" +"</div>")
+}
+
 $("#comment_body").val("");
 $("#comment-header h4").replaceWith("<%= j(render('/comments/comments_header')) %>");
 
