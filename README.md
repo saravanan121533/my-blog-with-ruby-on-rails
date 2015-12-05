@@ -27,3 +27,9 @@ Starting a Blog app to showcase my web development technical skills that I learn
    - UML diagram: railroady
    - Debugging: pry
    - Mailer: letter_opener
+
+#### To Use Blog
+1. git clone git@github.com:ivyr/my-blog-with-ruby-on-rails.git
+2. rake db:create
+3. rake db:seed
+4. rails s
