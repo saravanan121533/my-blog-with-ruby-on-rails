@@ -27,8 +27,10 @@ Starting a Blog app to showcase my web development technical skills that I learn
    - Debugging: pry
    - Mailer: letter_opener
 
-#### To Use Blog
+#### To Use the Blog App
 1. git clone git@github.com:ivyr/my-blog-with-ruby-on-rails.git
-2. rake db:create
-3. rake db:seed
-4. rails s
+2. cd my-blog-with-ruby-on-rails
+3. bundle install
+4. bundle exec rake db:create db:migrate
+5. rake db:seed
+6. rails server
