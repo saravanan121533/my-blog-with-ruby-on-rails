@@ -1,11 +1,10 @@
 class Post < ActiveRecord::Base
-  # validation for post model
+
   validates(:title, {presence: true,
                     uniqueness: {message: "Title is already in use."},
                     length: {minimum: 3}})
   validates(:body, {presence: true})
 
-  # model associations
   has_many :comments, dependent: :destroy
   belongs_to :user
   belongs_to :category
@@ -18,8 +17,6 @@ class Post < ActiveRecord::Base
 
   has_many :likes, dependent: :destroy
   has_many :liking_users, through: :likes, source: :user
-
-  # mount_uploader :image, ImageUploader
 
   # method used for search form
   def self.search(term)
@@ -34,14 +31,6 @@ class Post < ActiveRecord::Base
         where(["LOWER(title) LIKE :search_term OR LOWER(body) LIKE :search_term",
                {search_term: "%#{term}%"}])
       end
-
-      # previous implementations
-      # this will error if term is not found in tags table, fixed using above implementation
-      # where(["LOWER(title) LIKE :search_term OR LOWER(body) LIKE :search_term",
-            #  {search_term: "%#{term}%"}]) + Tag.find_by_name!(term).posts
-      # this will return the tagging object and not the post object
-      # Tagging.joins(:post, :tag).where(["LOWER(posts.title) LIKE :search_term OR LOWER(posts.body) LIKE :search_term", {search_term: "%#{term}%"}])
-      # OK: Tagging.joins(:post, :tag).where("tags.name": "bacon")
     else
       all
     end

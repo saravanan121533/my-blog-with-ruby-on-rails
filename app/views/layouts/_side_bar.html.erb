@@ -1,10 +1,8 @@
 <div class="panel panel-default" id="category-list">
-  <!-- This is the heading of the right side bar -->
   <div class="panel-heading">
     Categories
   </div>
 
-  <!-- This will iterate all the comments for this specific post and display it -->
   <ul class="list-group">
     <% if get_categories.present? %>
       <% get_categories.each do |category| %>
@@ -13,13 +11,12 @@
             <%= link_to category_path(category) do %>
               <%= category.title.capitalize %>
             <% end %>
-            <!-- This will display a badge on how many comments are posted -->
             <span class="badge pull-right">
               <%= get_category_post_count(category) %>
             </span>
           </h5>
         </li>
-      <% end %> <!-- end of loop -->
+      <% end %>
 
     <% else %>
         <p>No category to display.</p>
@@ -27,7 +24,6 @@
   </ul>
 </div>
 
-<!-- User favourites display in the side bar -->
 <% if user_signed_in? %>
   <div class="panel panel-default" id="favourites_list">
     <div class="panel-heading">
@@ -45,7 +41,7 @@
             </h5>
           </li>
 
-        <% end %> <!-- end of loop -->
+        <% end %>
 
       <% else %>
         <li class="list-group-item">

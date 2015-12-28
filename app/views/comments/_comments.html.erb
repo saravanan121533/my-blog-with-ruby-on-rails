@@ -1,5 +1,3 @@
-<!-- This is a form that enables user to post a comment for this specific blog post -->
-<!-- First need to check if the user can post a comment or not, e.g. user is not logged in -->
 <% if user_signed_in?  %>
   <ul class="list-group" id="post-comment">
     <li class="list-group-item list-group-item-info">
@@ -9,16 +7,12 @@
   </ul>
 <% end %>
 
-<!-- Display for previous comments -->
 <div class="panel panel-default">
-  <!-- comments header -->
   <div class="panel-heading" id="comment-header">
     <%= render "comments/comments_header" %>
   </div>
 
-  <!-- This will iterate all the comments for this specific post and display it -->
   <div class="list-group-item">
-    <!-- Check if there are comment data to display -->
     <% if @post.comments.present? %>
       <% @post.comments.order(updated_at: :desc).each do |comment| %>
         <div id="comments">
@@ -26,7 +20,6 @@
         </div>
       <% end %>
     <% else %>
-      <!-- There are no existing comments to display for this post -->
       <div class="list-group-item">
           <h5 id="no-comments">No comment to display.</h5>
       </div>

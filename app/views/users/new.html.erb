@@ -1,7 +1,5 @@
-
 <h3>Sign Up</h3>
 
-<!-- check if there are any errors to display -->
 <% if @user.errors.any? %>
   <div class="container alert alert-danger" role="alert">
     <%= @user.errors.full_messages.join(", ") %>
@@ -14,8 +12,6 @@
   </div>
 
   <div class="panel-body">
-
-    <!-- generate form for sign-up -->
     <%= form_for @user do |f| %>
       <div class="form-group">
         <%= f.label :first_name %>
@@ -43,6 +39,6 @@
       </div>
 
       <%= f.submit  class: "btn btn-primary"%>
-    <% end %> <!-- end of form -->
+    <% end %>
   </div>
 </div>

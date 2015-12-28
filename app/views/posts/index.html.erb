@@ -1,14 +1,11 @@
-<!-- check if there's an available blog to display -->
 <% if @posts.empty? %>
   <ul class="list-group">
     <li class="list-group-item list-group-item-info">
-      <!-- if there are no blogs available at the DB, No items to display -->
       <p>No items to display</p>
     </li>
   </ul>
 
 <% else %>
-  <!-- loop through all the data retrieve and display -->
   <% @posts.each do |item| %>
     <ul class="list-group">
       <li class="list-group-item list-group-item-info">
@@ -19,7 +16,6 @@
             </strong>
           <% end %>
 
-          <!-- date display entry updated date -->
           <p>
             Posted By <%= item.user.first_name %>
             <%= item.updated_at.strftime("on %b %d, %Y") %>
@@ -27,12 +23,10 @@
       </li>
 
       <li class="list-group-item">
-        <!-- this will show only 200 character of the body to continue reading
-        use needs to click on blog to view full content and other functions -->
         <p>
           <%= raw item.body.truncate(300) %>
         </p>
       </li>
     </ul>
-  <% end %> <!-- and of loop -->
-<% end %> <!-- end of if-else statement -->
+  <% end %>
+<% end %>

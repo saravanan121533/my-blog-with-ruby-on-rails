@@ -1,6 +1,5 @@
 <h3>New Blog Post</h3>
 
-<!-- check if there are any errors to display -->
 <% if @post.errors.any? %>
   <div class="alert alert-danger" role="alert">
     <%= @post.errors.full_messages.join(", ") %>

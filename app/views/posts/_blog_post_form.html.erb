@@ -1,4 +1,3 @@
-<%#= form_for(@post, remote: true) do |f| %>
 <%= form_for(@post) do |f| %>
   <ul class="list-group">
     <li class="list-group-item list-group-item-info">
@@ -7,13 +6,7 @@
 
     <li class="list-group-item">
       <div>
-
-      <%= f.label("Category") %>
-        <!-- dropdown menu: @category_options is is generated at the controller
-        where in it a array containing [title, id] and user input will be
-        stored in the category_id
-        [IMPROVEMENT] display nicely dropdown-menu and not very small display
-        -->
+        <%= f.label("Category") %>
         <%= f.select(:category_id,
                      options_for_select(@category_options, @post.category_id),
                      class: "form-control dropdown-menu") %>
@@ -27,7 +20,6 @@
       <div>
         <%= f.label(:body) %>
         <%= f.cktext_area(:body, class: "form-control") %>
-        <%#= f.text_area(:body, class: "form-control") %>
       </div>
 
       <div>
